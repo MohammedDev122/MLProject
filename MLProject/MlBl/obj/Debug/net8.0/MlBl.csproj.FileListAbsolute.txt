@@ -1,0 +1,15 @@
+C:\Users\Win -11\source\repos\MLProject\MlBl\bin\Debug\net8.0\MlBl.deps.json
+C:\Users\Win -11\source\repos\MLProject\MlBl\bin\Debug\net8.0\MlBl.dll
+C:\Users\Win -11\source\repos\MLProject\MlBl\bin\Debug\net8.0\MlBl.pdb
+C:\Users\Win -11\source\repos\MLProject\MlBl\bin\Debug\net8.0\MlDAL.dll
+C:\Users\Win -11\source\repos\MLProject\MlBl\bin\Debug\net8.0\MlDAL.pdb
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.csproj.AssemblyReference.cache
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.AssemblyInfoInputs.cache
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.AssemblyInfo.cs
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.csproj.CoreCompileInputs.cache
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.csproj.Up2Date
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.dll
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\refint\MlBl.dll
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\MlBl.pdb
+C:\Users\Win -11\source\repos\MLProject\MlBl\obj\Debug\net8.0\ref\MlBl.dll

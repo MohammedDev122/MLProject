@@ -1,0 +1,12 @@
+C:\Users\Win -11\source\repos\MLProject\MlDAL\bin\Debug\net8.0\MlDAL.deps.json
+C:\Users\Win -11\source\repos\MLProject\MlDAL\bin\Debug\net8.0\MlDAL.dll
+C:\Users\Win -11\source\repos\MLProject\MlDAL\bin\Debug\net8.0\MlDAL.pdb
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.csproj.AssemblyReference.cache
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.AssemblyInfoInputs.cache
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.AssemblyInfo.cs
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.csproj.CoreCompileInputs.cache
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.dll
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\refint\MlDAL.dll
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\MlDAL.pdb
+C:\Users\Win -11\source\repos\MLProject\MlDAL\obj\Debug\net8.0\ref\MlDAL.dll

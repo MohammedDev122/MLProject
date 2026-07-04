@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLProject", "MLProject\MLProject.csproj", "{A89CC3E0-444E-4317-874C-12E1BFA6173B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlBl", "MlBl\MlBl.csproj", "{637FF93A-FF32-457A-B372-ACDBAA0D51E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlDAL", "MlDAL\MlDAL.csproj", "{E252D3B2-25A8-4E81-BA1D-628F95680196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A89CC3E0-444E-4317-874C-12E1BFA6173B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89CC3E0-444E-4317-874C-12E1BFA6173B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89CC3E0-444E-4317-874C-12E1BFA6173B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89CC3E0-444E-4317-874C-12E1BFA6173B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637FF93A-FF32-457A-B372-ACDBAA0D51E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637FF93A-FF32-457A-B372-ACDBAA0D51E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637FF93A-FF32-457A-B372-ACDBAA0D51E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637FF93A-FF32-457A-B372-ACDBAA0D51E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E252D3B2-25A8-4E81-BA1D-628F95680196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E252D3B2-25A8-4E81-BA1D-628F95680196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E252D3B2-25A8-4E81-BA1D-628F95680196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E252D3B2-25A8-4E81-BA1D-628F95680196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76DCBF00-6DBF-4169-9D1A-8D1932A303DF}
+	EndGlobalSection
+EndGlobal
