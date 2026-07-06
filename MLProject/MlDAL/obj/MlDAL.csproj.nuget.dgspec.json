@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj": {}
+    "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj": {
+    "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj",
+        "projectUniqueName": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
         "projectName": "MlDAL",
-        "projectPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\obj\\",
+        "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,6 +53,32 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MlBl;
+using MlBL.Entities;
+using MlBL.ServicesInterfaces;
 using MlDAL;
+using MlDAL.Entities;
+using MlDAL.Interfaces;
 
 namespace MLProject.Controllers
 {
@@ -9,6 +13,13 @@ namespace MLProject.Controllers
     [ApiController]
     public class AnalysisController : ControllerBase
     {
+        private readonly IAnalysisService _analysisService;
+
+        public AnalysisController(IAnalysisService analysisService)
+        {
+            _analysisService = analysisService;
+        }
+
 
         [HttpGet("GetAllAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -16,7 +27,7 @@ namespace MLProject.Controllers
 
         public ActionResult<IEnumerable<AnalysisDto>> GetAllAnalysis()
         {
-            List<AnalysisDto> analysis = Analysis.GetAll();
+            List<AnalysisDto> analysis = _analysisService.GetAllAnalyses();
 
             if (analysis.Count == 0)
             {
@@ -38,12 +49,12 @@ namespace MLProject.Controllers
             {
                 return BadRequest("Not Accepted ID");
             }
-            Analysis analysis = Analysis.FindByID(id);
+            AnalysisDto analysis = _analysisService.GetAnalysisById(id);
             if (analysis == null)
             {
                 return NotFound($"Analysis With ID:{id} is not found");
             }
-            AnalysisDto ADTO = analysis.ADTO;
+            AnalysisDto ADTO = analysis;
             return Ok(ADTO);
 
 
@@ -60,7 +71,7 @@ namespace MLProject.Controllers
 
 
             }
-            Analysis analysis = new Analysis(ADTO);
+            AnalysisDto analysis = new Analysis(ADTO);
             analysis.SaveAnalysis();
             ADTO.AnalysisID = analysis.AnalysisID;
             return CreatedAtRoute("GetAnalysisByID", new { id = ADTO.AnalysisID }, ADTO);
@@ -82,7 +93,7 @@ namespace MLProject.Controllers
 
 
             }
-            Analysis analysis = Analysis.FindByID(ID);
+            AnalysisDto analysis = _analysisService.GetAnalysisById(ID);
             if (analysis == null)
                 return NotFound("There Is No Analysis With Such ID!");
            analysis.AnalysisName = ADTO.AnalysisName;
@@ -105,7 +116,7 @@ namespace MLProject.Controllers
                 return BadRequest("Incorrect ID");
             }
           
-            if(Analysis.DeleteAnalysis(ID))
+            if(_analysisService.DeleteAnalysis(ID))
           return Ok($"Analysis With ID:{ID} Deleted Succissfully!");
             else
                 return NotFound($"No Analysis With Such ID:{ID},no rows were Deleted!");

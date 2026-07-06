@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win -11\\source\\repos\\MLProject\\MLProject\\MLProject.csproj": {}
+    "D:\\ML Repo\\MLProject\\MLProject\\MLProject\\MLProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlBl\\MlBl.csproj": {
+    "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlBl\\MlBl.csproj",
-        "projectName": "MlBl",
-        "projectPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlBl\\MlBl.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlBl\\obj\\",
+        "projectUniqueName": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
+        "projectName": "MlBL",
+        "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj"
+              "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
+                "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj"
               }
             }
           }
@@ -73,20 +73,20 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj": {
+    "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj",
+        "projectUniqueName": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
         "projectName": "MlDAL",
-        "projectPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\MlDAL.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlDAL\\obj\\",
+        "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML Repo\\MLProject\\MLProject\\MlDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -122,6 +122,32 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -144,20 +170,20 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\source\\repos\\MLProject\\MLProject\\MLProject.csproj": {
+    "D:\\ML Repo\\MLProject\\MLProject\\MLProject\\MLProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MLProject\\MLProject.csproj",
+        "projectUniqueName": "D:\\ML Repo\\MLProject\\MLProject\\MLProject\\MLProject.csproj",
         "projectName": "MLProject",
-        "projectPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MLProject\\MLProject.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MLProject\\obj\\",
+        "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MLProject\\MLProject.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML Repo\\MLProject\\MLProject\\MLProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,8 +198,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlBl\\MlBl.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\source\\repos\\MLProject\\MlBl\\MlBl.csproj"
+              "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
+                "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj"
               }
             }
           }
