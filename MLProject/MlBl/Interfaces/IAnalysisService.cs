@@ -1,14 +1,13 @@
 ﻿using Core.Models;
 using MlBL.DTOs;
 using MlBL.Entities;
-using MlBL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MlBL.ServicesInterfaces
+namespace MlBL.Interfaces
 {
     public interface IAnalysisService : IService<AnalysisDto>
     {

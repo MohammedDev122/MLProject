@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using MlBL.Interfaces;
 using MlBL.Services;
-using MlBL.ServicesInterfaces;
 using MlDAL.DbContexts;
 using MlDAL.Interfaces;
 using MlDAL.Repositories;

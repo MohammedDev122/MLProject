@@ -2,7 +2,7 @@
 using MlBl;
 using MlBL.DTOs;
 using MlBL.Entities;
-using MlBL.ServicesInterfaces;
+using MlBL.Interfaces;
 using MlDAL.Interfaces;
 using MlDAL.Repositories;
 using System;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MlBL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76d1ea63008557776997772980a81741dded1e37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf79549457653652876cca75b1a34a13e895d1d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MlBL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MlBL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using MlBl;
 using MlBL.DTOs;
 using MlBL.Entities;
+using MlBL.Interfaces;
 using MlBL.Services;
-using MlBL.ServicesInterfaces;
 using MlDAL;
 using MlDAL.Interfaces;
 

@@ -31,8 +31,8 @@
       "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\analysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|d:\\ml repo\\mlproject\\mlproject\\mlbl\\servicesinterfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\servicesinterfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|d:\\ml repo\\mlproject\\mlproject\\mlbl\\interfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|d:\\ml repo\\mlproject\\mlproject\\mldal\\repositories\\analysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,17 +117,16 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T16:51:50.488Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "IAnalysisService.cs",
-              "DocumentMoniker": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\ServicesInterfaces\\IAnalysisService.cs",
-              "RelativeDocumentMoniker": "MlBl\\ServicesInterfaces\\IAnalysisService.cs",
-              "ToolTip": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\ServicesInterfaces\\IAnalysisService.cs",
-              "RelativeToolTip": "MlBl\\ServicesInterfaces\\IAnalysisService.cs",
+              "DocumentMoniker": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisService.cs",
+              "RelativeDocumentMoniker": "MlBl\\Interfaces\\IAnalysisService.cs",
+              "ToolTip": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisService.cs",
+              "RelativeToolTip": "MlBl\\Interfaces\\IAnalysisService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-06T05:52:30.785Z",
@@ -165,8 +164,7 @@
               "RelativeToolTip": "MLProject\\Controllers\\PackagesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T10:15:36.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-03T10:15:36.47Z"
             },
             {
               "$type": "Document",
@@ -178,8 +176,7 @@
               "RelativeToolTip": "Core\\Models\\Analysis.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T17:04:35.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T17:04:35.042Z"
             },
             {
               "$type": "Document",
@@ -191,8 +188,7 @@
               "RelativeToolTip": "Core\\DTOs\\AnalysisDto.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAnwCAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T17:23:49.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T17:23:49.279Z"
             },
             {
               "$type": "Document",
@@ -217,8 +213,7 @@
               "RelativeToolTip": "MlDAL\\Interfaces\\IAnalysisRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T05:34:52.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-06T05:34:52.662Z"
             },
             {
               "$type": "Document",
@@ -230,8 +225,7 @@
               "RelativeToolTip": "MlDAL\\Interfaces\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwEQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T16:14:56.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T16:14:56.218Z"
             },
             {
               "$type": "Document",
@@ -243,8 +237,7 @@
               "RelativeToolTip": "MlDAL\\Repositories\\AnalysisRepo.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T16:39:39.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-04T16:39:39.853Z"
             },
             {
               "$type": "Document",
@@ -256,8 +249,7 @@
               "RelativeToolTip": "MlDAL\\Configuration\\AnalysisConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T17:36:24.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-04T17:36:24.434Z"
             },
             {
               "$type": "Document",
@@ -269,7 +261,8 @@
               "RelativeToolTip": "MLProject\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T10:17:36.783Z"
+              "WhenOpened": "2026-07-03T10:17:36.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -317,8 +310,7 @@
               "RelativeToolTip": "MlBl\\FailCauses.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T17:58:18.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T17:58:18.623Z"
             },
             {
               "$type": "Document",
