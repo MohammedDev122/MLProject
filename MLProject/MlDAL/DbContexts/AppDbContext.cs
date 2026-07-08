@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.Models;
+using Microsoft.EntityFrameworkCore;
 using MlDAL.Configuration;
-using MlDAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace MlDAL.DbContexts
         public AppDbContext (DbContextOptions<AppDbContext> options) : base(options)
         { }
 
-        public virtual DbSet<AnalysisDto> Analyses { get; set; }
+        public virtual DbSet<Analysis> Analyses { get; set; }
 
 
 

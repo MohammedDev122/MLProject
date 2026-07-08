@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MlDAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace MlDAL.Configuration
 {
-    internal class AnalysisConfiguration : IEntityTypeConfiguration<AnalysisDto>
+    internal class AnalysisConfiguration : IEntityTypeConfiguration<Analysis>
     {
-        public void Configure(EntityTypeBuilder<AnalysisDto> builder)
+        public void Configure(EntityTypeBuilder<Analysis> builder)
         {
             builder.HasKey(e => e.AnalysisID);
 

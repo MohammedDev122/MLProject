@@ -1,7 +1,8 @@
-﻿using MlBl;
+﻿using Core.Models;
+using MlBl;
+using MlBL.DTOs;
 using MlBL.Entities;
 using MlBL.ServicesInterfaces;
-using MlDAL.Entities;
 using MlDAL.Interfaces;
 using MlDAL.Repositories;
 using System;
@@ -25,40 +26,38 @@ namespace MlBL.Services
             _analysisRepository = analysisRepo;
         }
 
-        public int AddAnalysis(Analysis newAnalysis)
+        public async Task<int> AddAsync(AnalysisDto newAnalysis)
         {
 
             ArgumentNullException.ThrowIfNull(newAnalysis); // prevent received null for a parameter that must not be null
 
-            if (!newAnalysis.CheckIfDataIsCorrect())
+            var analysis = new AnalysisManager(newAnalysis);
+
+            if (!analysis.CheckIfDataIsCorrect())
                 return -1;
 
 
-            int Id = _analysisRepository.AddAnalysis(newAnalysis.ADTO);
+            int Id = await _analysisRepository.AddAsync(analysis.analysis);
 
             if (Id > 0)
-            {
-                newAnalysis.isAdded = true;
                 return Id;
-            }
 
             // if failed to added in database
             Cause = (FailCauses.enFailCauses.enErrorFromAnalysisDB);
             return -1;
         }
 
-        public bool UpdateAnalysis(Analysis updatedAnalysis)
+        public async Task<bool> UpdateAsync(AnalysisDto updatedAnalysis)
         {
             ArgumentNullException.ThrowIfNull(updatedAnalysis); // prevent received null for a parameter that must not be null
 
-            if (!updatedAnalysis.CheckIfDataIsCorrect())
+            var analysis = new AnalysisManager(updatedAnalysis);
+
+            if (!analysis.CheckIfDataIsCorrect())
                 return false;
 
-            if (_analysisRepository.UpdateAnalysis(updatedAnalysis.ADTO))
-            {
-                updatedAnalysis.isAdded = true;
+            if (await _analysisRepository.UpdateAsync(analysis.analysis))
                 return true;
-            }
 
             // if failed to updated in database
             Cause = (FailCauses.enFailCauses.enErrorFromAnalysisDB);
@@ -67,49 +66,52 @@ namespace MlBL.Services
         }
 
         
-        public bool DeleteAnalysis(int analysisId)
+        public async Task<bool> DeleteAsync(int analysisId)
         {
             if (analysisId < 0)
                 throw new ArgumentOutOfRangeException();
 
-            return _analysisRepository.DeleteAnalysis(analysisId);
+            return await _analysisRepository.DeleteAsync(analysisId);
         }
 
     
-        public AnalysisDto? GetAnalysisById(int analysisId)
+        public async Task<AnalysisDto?> GetByIdAsync(int analysisId)
         {
             if (analysisId <= 0)
                 throw new ArgumentOutOfRangeException(nameof(analysisId), "Analysis ID must be greater than zero.");
 
-            return _analysisRepository.GetAnalysisById(analysisId);
+            return  new AnalysisDto( await _analysisRepository.GetByIdAsync(analysisId));
         }
 
-     
-        public AnalysisDto? GetAnalysisByName(string analysisName)
+
+        public async Task<AnalysisDto?> GetByNameAsync(string analysisName)
         {
             ArgumentNullException.ThrowIfNullOrEmpty(analysisName);
 
-            return _analysisRepository.GetAnalysisByName(analysisName);
+            return new AnalysisDto(await _analysisRepository.GetByNameAsync(analysisName));
         }
 
-        public List<AnalysisDto> GetAllAnalyses()
+        public async Task<List<AnalysisDto>> GetAllAsync ()
         { 
-            return _analysisRepository.GetAllAnalyses();
+            var analyses = await _analysisRepository.GetAllAsync();
+            return  analyses
+            .Select(a => new AnalysisDto( a.AnalysisID, a.AnalysisName, a.Cost))
+            .ToList();
         }
 
 
-        public Dictionary<int, string> GetAllAnalysisMap()
+        public async Task<Dictionary<int, string>> GetMapAsync()
         {
-            return _analysisRepository.GetAllAnalysisMap();
+            return await _analysisRepository.GetMapAsync();
         }
 
 
-        public bool Exists(int analysisID)
+        public async Task<bool> ExistsAsync(int analysisID)
         { 
             if (analysisID <= 0)
                 throw new ArgumentOutOfRangeException();
 
-            return _analysisRepository.Exists(analysisID);
+            return await _analysisRepository.ExistsAsync(analysisID);
         }
 
     }

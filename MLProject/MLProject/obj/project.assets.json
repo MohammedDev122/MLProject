@@ -868,10 +868,21 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "MlBL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Core": "1.0.0",
           "MlDAL": "1.0.0"
         },
         "compile": {
@@ -885,6 +896,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Core": "1.0.0",
           "Microsoft.Data.SqlClient": "7.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
@@ -2473,6 +2485,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "MlBL/1.0.0": {
       "type": "project",
       "path": "../MlBl/MlBL.csproj",
@@ -2486,6 +2503,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Core >= 1.0.0",
       "MlBL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -2522,6 +2540,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\ML Repo\\MLProject\\MLProject\\Core\\Core.csproj": {
+              "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\Core\\Core.csproj"
+            },
             "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
               "projectPath": "D:\\ML Repo\\MLProject\\MLProject\\MlBl\\MlBL.csproj"
             }

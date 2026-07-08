@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"));
+        builder.Configuration.GetConnectionString("TestConnection"));
 });
 builder.Services.AddScoped<IAnalysisRepository, AnalysisRepo>();
 builder.Services.AddScoped<IAnalysisService, AnalysisService>();

@@ -1,6 +1,8 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Core.Models;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using MlBL.DTOs;
 using MlDAL.DbContexts;
-using MlDAL.Entities;
 using MlDAL.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -24,36 +26,35 @@ namespace MlDAL.Repositories
         }
 
     
-        public Dictionary<int, string> GetAllAnalysisMap()
+        public async Task<Dictionary<int, string>> GetMapAsync()
         {
 
-            return _context.Analyses
+            return await _context.Analyses
                                 .Select(a => new { a.AnalysisID, a.AnalysisName })
-                                .ToDictionary(a => a.AnalysisID, a => a.AnalysisName);
+                                .ToDictionaryAsync(a => a.AnalysisID, a => a.AnalysisName);
 
         }
 
-        public AnalysisDto? GetAnalysisById(int analysisID)
+        public async Task<Analysis>? GetByIdAsync(int analysisID)
         {
             if (analysisID <= 0)
                 throw new ArgumentOutOfRangeException(nameof(analysisID));
 
-            return _context.Analyses
-                            .FirstOrDefault(a => a.AnalysisID == analysisID);
+            return await _context.Analyses
+                            .FirstOrDefaultAsync(a => a.AnalysisID == analysisID);
 
         }
 
-
-        public AnalysisDto? GetAnalysisByName(string analysisName)
+        public async Task<Analysis>? GetByNameAsync(string analysisName)
         {
             ArgumentNullException.ThrowIfNullOrEmpty(analysisName, nameof(analysisName)); // Prevent received empty or null string
 
-            return _context.Analyses
-                            .FirstOrDefault(a => a.AnalysisName == analysisName);
+            return await _context.Analyses
+                            .FirstOrDefaultAsync(a => a.AnalysisName == analysisName);
 
         }
 
-        public int AddAnalysis(AnalysisDto newAnalysis)
+        public async Task<int> AddAsync(Analysis newAnalysis)
         {
             ArgumentNullException.ThrowIfNull(newAnalysis); // prevent received null for a parameter that must not be null
 
@@ -62,12 +63,12 @@ namespace MlDAL.Repositories
             _context.Analyses.Add(newAnalysis);
 
             // save  on database
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return newAnalysis.AnalysisID;
         }
 
-        public bool UpdateAnalysis(AnalysisDto updatedAnalysis)
+        public async Task<bool> UpdateAsync(Analysis updatedAnalysis)
         {
 
             ArgumentNullException.ThrowIfNull(updatedAnalysis); // prevent received null for a parameter that must not be null
@@ -75,44 +76,43 @@ namespace MlDAL.Repositories
             // Load then update method
 
             // Load the row
-            var analysis = _context.Analyses.
-                FirstOrDefault(a => a.AnalysisID == updatedAnalysis.AnalysisID);
+            var analysis = await _context.Analyses.
+                FirstOrDefaultAsync(a => a.AnalysisID == updatedAnalysis.AnalysisID);
 
             if (analysis == null)
                 return false;
 
             // update the row
             analysis.AnalysisName = updatedAnalysis.AnalysisName;
-            analysis.AnalysisCost = updatedAnalysis.AnalysisCost;
+            analysis.Cost = updatedAnalysis.Cost;
 
             // save changes on database
-            _context.SaveChanges();
+            _context.SaveChangesAsync();
 
             return true;
 
         }
 
-
-        public List<AnalysisDto> GetAllAnalyses()
+        public async Task<List<Analysis>> GetAllAsync()
         {
-            return _context.Analyses
-                                .Select(a => new AnalysisDto
+            return await _context.Analyses
+                                .Select(a => new Analysis
                                 (
                                     a.AnalysisID,
                                     a.AnalysisName,
-                                    a.AnalysisCost
-                                )).ToList();
+                                    a.Cost
+                                )).ToListAsync();
         }
 
-        public bool DeleteAnalysis(int analysisID)
+        public async Task<bool> DeleteAsync(int analysisID)
         {
             if (analysisID <= 0)
                 throw new ArgumentOutOfRangeException(nameof(analysisID));
 
             // load then delete approach 
             var analysis =
-                _context.Analyses
-                        .FirstOrDefault(s => s.AnalysisID == analysisID);
+                await _context.Analyses
+                        .FirstOrDefaultAsync(s => s.AnalysisID == analysisID);
 
             if (analysis == null)
                 return false;   
@@ -120,16 +120,16 @@ namespace MlDAL.Repositories
 
             _context.Analyses.Remove(analysis);
 
-            return _context.SaveChanges() > 0; // means return true if there are any rows affected
+            return await _context.SaveChangesAsync() > 0; // means return true if there are any rows affected
         }
 
-        public bool Exists(int analysisID)
+        public async Task<bool> ExistsAsync(int analysisID)
         {
             if (analysisID <= 0)
                 throw new ArgumentOutOfRangeException(nameof(analysisID));
 
-            return _context.Analyses
-                            .Any(a => a.AnalysisID == analysisID);  
+            return await _context.Analyses
+                            .AnyAsync(a => a.AnalysisID == analysisID);  
         }
 
     }

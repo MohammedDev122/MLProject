@@ -1,64 +1,66 @@
-﻿using MlBl;
-using MlDAL.Entities;
+﻿using Core.Models;
+using MlBl;
+using MlBL.DTOs;
+using MlBL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static MlBL.Services.AnalysisService;
 
 namespace MlBL.Entities
 {
-    public class Analysis
+    public class AnalysisManager
     {
-        public int AnalysisID { get; set; }
-        public string AnalysisName { get; set; }
-        public double Cost { get; set; }
+        
+        public Analysis analysis { get; set; }
 
         // to determine the cause of failing
         public FailCauses.enFailCauses failCause { get; set; }
+
 
         public enum enMode { enUpdate, enAddNew };
 
         public enMode Mode = enMode.enAddNew;
 
-        public bool isAdded = false;
-        public bool isUpdated = false;
+        public bool isAdded { get; set; }
+        public bool isUpdated { get; set; }
 
-        public Analysis(int analysisID, string analysisName, double cost)
+        public AnalysisManager (Analysis analysis)
         {
-            AnalysisID = analysisID;
-            AnalysisName = analysisName;
-            Cost = cost;
+            this.analysis = analysis;
+            isAdded = false;
+            isUpdated = false;
         }
 
-        public AnalysisDto ADTO
+        public AnalysisManager(AnalysisDto analysisDto)
         {
-            get { return (new AnalysisDto(this.AnalysisID, this.AnalysisName, this.Cost)); }
+            this.analysis = new Analysis(analysisDto);
+            isAdded = false;
+            isUpdated = false;
         }
-
 
         public bool CheckIfDataIsCorrect()
         {
 
 
-            if (Validations.CheckIfNameIsTooShort(AnalysisName))
+            if (Validations.CheckIfNameIsTooShort(analysis.AnalysisName))
             {
                 failCause = FailCauses.enFailCauses.enAnalysisNameIsTooShort;
                 return false;
             }
-            if (Validations.CheckIfNameContainsOnlySpaces(AnalysisName))
+            if (Validations.CheckIfNameContainsOnlySpaces(analysis.AnalysisName))
             {
                 failCause = FailCauses.enFailCauses.enAnalysisNameIsTooShort;
                 return false;
             }
-            if (Validations.CheckIfNumIsNull(Cost))
+            if (Validations.CheckIfNumIsNull(analysis.Cost))
             {
                 failCause = FailCauses.enFailCauses.enCostIsNull;
                 return false;
 
             }
-            if (Validations.CheckIfNumIsNegative(Cost))
+            if (Validations.CheckIfNumIsNegative(analysis.Cost))
             {
                 failCause = FailCauses.enFailCauses.enCostIsNegative;
                 return false;

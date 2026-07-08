@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MlBl;
+using MlBL.DTOs;
 using MlBL.Entities;
+using MlBL.Services;
 using MlBL.ServicesInterfaces;
 using MlDAL;
-using MlDAL.Entities;
 using MlDAL.Interfaces;
 
 namespace MLProject.Controllers
@@ -24,18 +25,14 @@ namespace MLProject.Controllers
         [HttpGet("GetAllAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-
-        public ActionResult<IEnumerable<AnalysisDto>> GetAllAnalysis()
+        public async Task<ActionResult<IEnumerable<AnalysisDto>>> GetAllAnalysis()
         {
-            List<AnalysisDto> analysis = _analysisService.GetAllAnalyses();
+            List<AnalysisDto> analysis = await _analysisService.GetAllAsync();
 
             if (analysis.Count == 0)
-            {
                 return NotFound("No Analysis not Found!");
-            }
+
             return Ok(analysis);
-
-
 
         }
 
@@ -43,84 +40,69 @@ namespace MLProject.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<AnalysisDto> GetAnalysisByID(int id)
+        public async Task<ActionResult<AnalysisDto>> GetAnalysisByID(int id)
         {
             if (id < 0)
-            {
                 return BadRequest("Not Accepted ID");
-            }
-            AnalysisDto analysis = _analysisService.GetAnalysisById(id);
-            if (analysis == null)
-            {
-                return NotFound($"Analysis With ID:{id} is not found");
-            }
-            AnalysisDto ADTO = analysis;
-            return Ok(ADTO);
 
+            AnalysisDto? analysis = await _analysisService.GetByIdAsync(id);
+
+            if (analysis == null)
+                return NotFound($"Analysis With ID:{id} is not found");
+
+            return Ok(analysis);
 
         }
+
+
         [HttpPost( Name = "AddAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<AnalysisDto> AddAnalysis(AnalysisDto ADTO)
+        public async Task<ActionResult<AnalysisDto>> AddAnalysis(AnalysisDto analysisDto)
         {
-            if (ADTO == null || string.IsNullOrEmpty(ADTO.AnalysisName) || ADTO.AnalysisCost < 0)
-            {
-
+            if (analysisDto == null || string.IsNullOrEmpty(analysisDto.AnalysisName) || analysisDto.AnalysisCost < 0)
                 return BadRequest("Data is Incomplete!");
 
+             analysisDto.AnalysisID = await _analysisService.AddAsync(analysisDto);
+           
+            // analysis.SaveAnalysis();
 
-            }
-            AnalysisDto analysis = new Analysis(ADTO);
-            analysis.SaveAnalysis();
-            ADTO.AnalysisID = analysis.AnalysisID;
-            return CreatedAtRoute("GetAnalysisByID", new { id = ADTO.AnalysisID }, ADTO);
-
+            return CreatedAtRoute("GetAnalysisByID", new { id = analysisDto.AnalysisID }, analysisDto);
 
         }
 
         [HttpPut("{ID}",Name = "UpdateAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<AnalysisDto> UpdateAnalysis(int ID,AnalysisDto ADTO)
+        public async Task<ActionResult<AnalysisDto>> UpdateAnalysis(int ID,AnalysisDto analysisDto)
         {
-            if (ADTO == null||ID<=0 || string.IsNullOrEmpty(ADTO.AnalysisName) || ADTO.AnalysisCost < 0)
-            {
-
+            if (analysisDto == null||ID<=0 || string.IsNullOrEmpty(analysisDto.AnalysisName) || analysisDto.AnalysisCost < 0)
                 return BadRequest("Data is Incomplete!");
 
+            // if update failed cuz the id is wrong
+            if (await _analysisService.UpdateAsync(analysisDto))
+                return CreatedAtRoute("GetAnalysisByID", new { id = analysisDto.AnalysisID }, analysisDto);
 
-            }
-            AnalysisDto analysis = _analysisService.GetAnalysisById(ID);
-            if (analysis == null)
+            else
                 return NotFound("There Is No Analysis With Such ID!");
-           analysis.AnalysisName = ADTO.AnalysisName;
-            analysis.Cost=ADTO.AnalysisCost;
-            analysis.SaveAnalysis();
-            ADTO = analysis.ADTO;
-            return CreatedAtRoute("GetAnalysisByID", new { id = ADTO.AnalysisID }, ADTO);
-
-
         }
+
+
         [HttpDelete("{ID}", Name = "DeleteAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<bool>DeleteAnalysis(int ID)
+        public async Task<ActionResult<bool>> DeleteAnalysis(int ID)
         {
             if (ID < 0)
-            {
                 return BadRequest("Incorrect ID");
-            }
           
-            if(_analysisService.DeleteAnalysis(ID))
-          return Ok($"Analysis With ID:{ID} Deleted Succissfully!");
+            if(await _analysisService.DeleteAsync(ID))
+                return Ok($"Analysis With ID:{ID} Deleted Succissfully!");
+
             else
                 return NotFound($"No Analysis With Such ID:{ID},no rows were Deleted!");
-
 
         }
 

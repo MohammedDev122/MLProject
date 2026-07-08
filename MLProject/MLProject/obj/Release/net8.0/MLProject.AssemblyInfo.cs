@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MLProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d8de11d662422aa7a7decedf8476b5829ecedf6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76d1ea63008557776997772980a81741dded1e37")]
 [assembly: System.Reflection.AssemblyProductAttribute("MLProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MLProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
