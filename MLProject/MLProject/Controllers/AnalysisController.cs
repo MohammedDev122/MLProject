@@ -99,7 +99,7 @@ namespace MLProject.Controllers
                 return BadRequest("Incorrect ID");
           
             if(await _analysisService.DeleteAsync(ID))
-                return Ok($"Analysis With ID:{ID} Deleted Succissfully!");
+                return Ok($"Analysis With ID:{ID} Deleted Successfully!");
 
             else
                 return NotFound($"No Analysis With Such ID:{ID},no rows were Deleted!");

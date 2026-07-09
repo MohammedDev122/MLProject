@@ -17,10 +17,10 @@ namespace MlBL.DTOs
 
         public string AnalysisName { get; set; }
 
-        public double AnalysisCost { get; set; }
+        public decimal AnalysisCost { get; set; }
 
 
-        public AnalysisDto(int AnalysisID, string AnalysisName, double AnalysisCost)
+        public AnalysisDto(int AnalysisID, string AnalysisName, decimal AnalysisCost)
         {
             this.AnalysisID = AnalysisID;
             this.AnalysisName = AnalysisName;

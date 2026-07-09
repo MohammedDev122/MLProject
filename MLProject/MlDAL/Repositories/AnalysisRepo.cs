@@ -29,7 +29,7 @@ namespace MlDAL.Repositories
         public async Task<Dictionary<int, string>> GetMapAsync()
         {
 
-            return await _context.Analyses
+            return await _context.Analysis
                                 .Select(a => new { a.AnalysisID, a.AnalysisName })
                                 .ToDictionaryAsync(a => a.AnalysisID, a => a.AnalysisName);
 
@@ -40,7 +40,7 @@ namespace MlDAL.Repositories
             if (analysisID <= 0)
                 throw new ArgumentOutOfRangeException(nameof(analysisID));
 
-            return await _context.Analyses
+            return await _context.Analysis
                             .FirstOrDefaultAsync(a => a.AnalysisID == analysisID);
 
         }
@@ -49,7 +49,7 @@ namespace MlDAL.Repositories
         {
             ArgumentNullException.ThrowIfNullOrEmpty(analysisName, nameof(analysisName)); // Prevent received empty or null string
 
-            return await _context.Analyses
+            return await _context.Analysis
                             .FirstOrDefaultAsync(a => a.AnalysisName == analysisName);
 
         }
@@ -60,7 +60,7 @@ namespace MlDAL.Repositories
 
 
             // Mark this entity as Added
-            _context.Analyses.Add(newAnalysis);
+            _context.Analysis.Add(newAnalysis);
 
             // save  on database
             await _context.SaveChangesAsync();
@@ -76,7 +76,7 @@ namespace MlDAL.Repositories
             // Load then update method
 
             // Load the row
-            var analysis = await _context.Analyses.
+            var analysis = await _context.Analysis.
                 FirstOrDefaultAsync(a => a.AnalysisID == updatedAnalysis.AnalysisID);
 
             if (analysis == null)
@@ -95,7 +95,7 @@ namespace MlDAL.Repositories
 
         public async Task<List<Analysis>> GetAllAsync()
         {
-            return await _context.Analyses
+            return await _context.Analysis
                                 .Select(a => new Analysis
                                 (
                                     a.AnalysisID,
@@ -111,14 +111,14 @@ namespace MlDAL.Repositories
 
             // load then delete approach 
             var analysis =
-                await _context.Analyses
+                await _context.Analysis
                         .FirstOrDefaultAsync(s => s.AnalysisID == analysisID);
 
             if (analysis == null)
                 return false;   
 
 
-            _context.Analyses.Remove(analysis);
+            _context.Analysis.Remove(analysis);
 
             return await _context.SaveChangesAsync() > 0; // means return true if there are any rows affected
         }
@@ -128,7 +128,7 @@ namespace MlDAL.Repositories
             if (analysisID <= 0)
                 throw new ArgumentOutOfRangeException(nameof(analysisID));
 
-            return await _context.Analyses
+            return await _context.Analysis
                             .AnyAsync(a => a.AnalysisID == analysisID);  
         }
 

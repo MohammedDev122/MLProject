@@ -25,3 +25,6 @@ D:\ML Repo\MLProject\MLProject\MlDAL\obj\Release\net8.0\refint\MlDAL.dll
 D:\ML Repo\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.pdb
 D:\ML Repo\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.genruntimeconfig.cache
 D:\ML Repo\MLProject\MLProject\MlDAL\obj\Release\net8.0\ref\MlDAL.dll
+D:\ML Repo\MLProject\MLProject\MlDAL\bin\Release\net8.0\Core.dll
+D:\ML Repo\MLProject\MLProject\MlDAL\bin\Release\net8.0\Core.pdb
+D:\ML Repo\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.csproj.Up2Date

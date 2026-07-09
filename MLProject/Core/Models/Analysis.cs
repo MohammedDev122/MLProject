@@ -17,9 +17,11 @@ namespace Core.Models
     {
         public int AnalysisID { get; set; }
         public string AnalysisName { get; set; }
-        public double Cost { get; set; }
+        public decimal Cost { get; set; }
 
-        public Analysis (int analysisId, string analysisName, double cost)
+        public Analysis () { }
+
+        public Analysis (int analysisId, string analysisName, decimal cost)
         {
             AnalysisID = analysisId;
             AnalysisName = analysisName;

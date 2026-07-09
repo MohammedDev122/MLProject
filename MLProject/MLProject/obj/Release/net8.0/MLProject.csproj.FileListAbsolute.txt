@@ -90,7 +90,6 @@ D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.dll
 D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\refint\MLProject.dll
 D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.pdb
 D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\appsettings.Development.json
-D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\appsettings.json
 D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\.filenesting.json
 D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\MLProject.staticwebassets.endpoints.json
 D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\MLProject.exe
@@ -162,3 +161,5 @@ D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\staticwebassets.upTo
 D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.csproj.Up2Date
 D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.genruntimeconfig.cache
 D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\ref\MLProject.dll
+D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\Core.dll
+D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\Core.pdb

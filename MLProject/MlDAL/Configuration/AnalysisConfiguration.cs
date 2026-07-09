@@ -19,7 +19,7 @@ namespace MlDAL.Configuration
             builder.Property(e => e.AnalysisName)
                    .HasMaxLength(20);
 
-            builder.Property(e => e.AnalysisCost)
+            builder.Property(e => e.Cost)
                    .HasColumnType("decimal(10, 2)");
         }
 

@@ -29,3 +29,5 @@ D:\ML Repo\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.dll
 D:\ML Repo\MLProject\MLProject\MlBl\obj\Release\net8.0\refint\MlBL.dll
 D:\ML Repo\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.pdb
 D:\ML Repo\MLProject\MLProject\MlBl\obj\Release\net8.0\ref\MlBL.dll
+D:\ML Repo\MLProject\MLProject\MlBl\bin\Release\net8.0\Core.dll
+D:\ML Repo\MLProject\MLProject\MlBl\bin\Release\net8.0\Core.pdb

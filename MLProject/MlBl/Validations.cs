@@ -57,7 +57,7 @@ namespace MlBl
             var WhiteSpaces = Name.Where(n => n == ' ');
             return WhiteSpaces.Count() == Name.Count();
         }
-        public static bool CheckIfNumIsNull(double? Num)
+        public static bool CheckIfNumIsNull(decimal? Num)
         {
 
             return Num == null;
@@ -65,7 +65,7 @@ namespace MlBl
 
 
         }
-        public static bool CheckIfNumIsNegative(double Num)
+        public static bool CheckIfNumIsNegative(decimal Num)
         {
 
             return Num < 0;

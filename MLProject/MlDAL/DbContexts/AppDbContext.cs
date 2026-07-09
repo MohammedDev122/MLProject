@@ -14,7 +14,7 @@ namespace MlDAL.DbContexts
         public AppDbContext (DbContextOptions<AppDbContext> options) : base(options)
         { }
 
-        public virtual DbSet<Analysis> Analyses { get; set; }
+        public virtual DbSet<Analysis> Analysis { get; set; }
 
 
 
