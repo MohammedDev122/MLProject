@@ -8,7 +8,6 @@ D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\MLProject.deps.json
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\MLProject.runtimeconfig.json
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\.filenesting.json
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\appsettings.Development.json
-D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\appsettings.json
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\MLProject.staticwebassets.endpoints.json
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\MLProject.exe
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\Tracker.exe
@@ -78,3 +77,4 @@ D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\refint\Tracker.dll
 D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\Tracker.pdb
 D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\Tracker.genruntimeconfig.cache
 D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\ref\Tracker.dll
+D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\appsettings.json

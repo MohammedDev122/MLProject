@@ -39,6 +39,7 @@ namespace MlBL.Entities
             isAdded = false;
             isUpdated = false;
         }
+     
 
         public bool CheckIfDataIsCorrect()
         {

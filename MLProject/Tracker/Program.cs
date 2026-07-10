@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MlBL.DTOs;
+using MlBL.Services;
 using MlDAL.DbContexts;
 using MlDAL.Repositories;
 
@@ -40,24 +42,39 @@ using MlDAL.Repositories;
     var analysisRepo = new AnalysisRepo(context);
 
     Console.WriteLine("Start");
-    var analyses = await GetAll(context);
-    Console.WriteLine("Data got");
+    var newAnalysis = new UpdateAnalysisDto(241, 100);
+    var analysis = await Update(analysisRepo, newAnalysis);
+    Console.WriteLine("updated successfully");
 
-    if (analyses.Count > 0)
+    if (analysis != null)
     {
-        foreach (Analysis analysis in analyses)
-        {
-            Console.WriteLine($"Id: {analysis.AnalysisID}, Name: {analysis.AnalysisName}, Cost: {analysis.Cost}");
-        }
+         Console.WriteLine($"Id: {analysis.AnalysisID}, Name: {analysis.AnalysisName}, Cost: {analysis.AnalysisCost}");
     }
     else
     {
-        Console.WriteLine("Analysis is empty");
+        Console.WriteLine("Analysis doesn't updated successfully");
     }
 
 
-async Task<List<Analysis>> GetAll (AppDbContext context)
+async Task<List<AnalysisDto>> GetAll (AnalysisRepo repo)
 {
-   return await analysisRepo.GetAllAsync();
+    var service = new AnalysisService(repo);
+    return await service.GetAllAsync();
+
+}
+
+async Task<AnalysisDto> Update (AnalysisRepo repo, UpdateAnalysisDto updateAnalysisDto)
+{
+    var service = new AnalysisService(repo);
+    return await service.UpdateAsync(updateAnalysisDto);
+
+}
+
+
+
+async Task <AnalysisDto> Add(AnalysisRepo repo, CreateAnalysisDto createAnalysisDto)
+{
+    var service = new AnalysisService(repo);
+    return await service.AddAsync(createAnalysisDto);
 
 }

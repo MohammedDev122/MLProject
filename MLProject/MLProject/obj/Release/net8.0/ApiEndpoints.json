@@ -1,42 +1,6 @@
 [
   {
     "ContainingType": "MLProject.Controllers.AnalysisController",
-    "Method": "AddAnalysis",
-    "RelativePath": "api/AnalysisController",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ADTO",
-        "Type": "MlDAL.Entities.AnalysisDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "MlDAL.Entities.AnalysisDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      }
-    ],
-    "EndpointName": "AddAnalysis"
-  },
-  {
-    "ContainingType": "MLProject.Controllers.AnalysisController",
     "Method": "GetAnalysisByID",
     "RelativePath": "api/AnalysisController/{id}",
     "HttpMethod": "GET",
@@ -51,7 +15,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MlDAL.Entities.AnalysisDto",
+        "Type": "MlBL.DTOs.AnalysisDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -82,101 +46,6 @@
   },
   {
     "ContainingType": "MLProject.Controllers.AnalysisController",
-    "Method": "UpdateAnalysis",
-    "RelativePath": "api/AnalysisController/{ID}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "ADTO",
-        "Type": "MlDAL.Entities.AnalysisDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "MlDAL.Entities.AnalysisDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      }
-    ],
-    "EndpointName": "UpdateAnalysis"
-  },
-  {
-    "ContainingType": "MLProject.Controllers.AnalysisController",
-    "Method": "DeleteAnalysis",
-    "RelativePath": "api/AnalysisController/{ID}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      }
-    ],
-    "EndpointName": "DeleteAnalysis"
-  },
-  {
-    "ContainingType": "MLProject.Controllers.AnalysisController",
     "Method": "GetAllAnalysis",
     "RelativePath": "api/AnalysisController/GetAllAnalysis",
     "HttpMethod": "GET",
@@ -185,7 +54,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MlDAL.Entities.AnalysisDto, MlDAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MlBL.DTOs.AnalysisDto, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

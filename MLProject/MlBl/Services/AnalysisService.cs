@@ -26,42 +26,47 @@ namespace MlBL.Services
             _analysisRepository = analysisRepo;
         }
 
-        public async Task<int> AddAsync(AnalysisDto newAnalysis)
+        public async Task<AnalysisDto> AddAsync(CreateAnalysisDto newAnalysis)
         {
 
             ArgumentNullException.ThrowIfNull(newAnalysis); // prevent received null for a parameter that must not be null
 
-            var analysis = new AnalysisManager(newAnalysis);
+            var analysis = new AnalysisManager(newAnalysis.ToDto());
 
             if (!analysis.CheckIfDataIsCorrect())
-                return -1;
+                return null;
 
+            AnalysisDto dto = newAnalysis.ToDto();
+            dto.AnalysisID = await _analysisRepository.AddAsync(analysis.analysis);
 
-            int Id = await _analysisRepository.AddAsync(analysis.analysis);
-
-            if (Id > 0)
-                return Id;
+            if (dto.AnalysisID > 0)
+                return dto;
 
             // if failed to added in database
             Cause = (FailCauses.enFailCauses.enErrorFromAnalysisDB);
-            return -1;
+            return null;
         }
 
-        public async Task<bool> UpdateAsync(AnalysisDto updatedAnalysis)
+        public async Task<AnalysisDto> UpdateAsync(UpdateAnalysisDto updatedAnalysis)
         {
             ArgumentNullException.ThrowIfNull(updatedAnalysis); // prevent received null for a parameter that must not be null
 
-            var analysis = new AnalysisManager(updatedAnalysis);
+            var analysis = await _analysisRepository.GetByIdAsync(updatedAnalysis.AnalysisID);
 
-            if (!analysis.CheckIfDataIsCorrect())
-                return false;
+            var analysisManager = new AnalysisManager(analysis);
 
-            if (await _analysisRepository.UpdateAsync(analysis.analysis))
-                return true;
+            if (!analysisManager.CheckIfDataIsCorrect())
+                return null;
+
+            // update it
+            analysis.Cost = updatedAnalysis.AnalysisCost;
+
+            if (await _analysisRepository.UpdateAsync(analysis))
+                return new AnalysisDto(analysis);
 
             // if failed to updated in database
             Cause = (FailCauses.enFailCauses.enErrorFromAnalysisDB);
-            return false;
+            return null;
             
         }
 

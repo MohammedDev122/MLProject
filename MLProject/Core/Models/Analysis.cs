@@ -30,7 +30,8 @@ namespace Core.Models
 
         public Analysis (AnalysisDto analysisDto)
         {
-            AnalysisID = analysisDto.AnalysisID;
+            // if dto is in creating the id is null in dto and 0 in analysis model till got from DB
+            AnalysisID = analysisDto.AnalysisID?? 0;
             AnalysisName = analysisDto.AnalysisName;
             Cost = analysisDto.AnalysisCost;
         }

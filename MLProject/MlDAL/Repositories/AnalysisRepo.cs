@@ -83,7 +83,6 @@ namespace MlDAL.Repositories
                 return false;
 
             // update the row
-            analysis.AnalysisName = updatedAnalysis.AnalysisName;
             analysis.Cost = updatedAnalysis.Cost;
 
             // save changes on database

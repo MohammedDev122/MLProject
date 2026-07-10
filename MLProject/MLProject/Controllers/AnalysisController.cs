@@ -54,23 +54,24 @@ namespace MLProject.Controllers
 
         }
 
-
+        /*
         [HttpPost( Name = "AddAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<AnalysisDto>> AddAnalysis(AnalysisDto analysisDto)
+        public async Task<ActionResult<AnalysisDto>> AddAnalysis(CreateAnalysisDTO newDto)
         {
-            if (analysisDto == null || string.IsNullOrEmpty(analysisDto.AnalysisName) || analysisDto.AnalysisCost < 0)
+            if (newDto == null || string.IsNullOrEmpty(newDto.AnalysisName) || newDto.AnalysisCost < 0)
                 return BadRequest("Data is Incomplete!");
 
-             analysisDto.AnalysisID = await _analysisService.AddAsync(analysisDto);
+            AnalysisDto dto = await _analysisService.AddAsync(newDto);
            
             // analysis.SaveAnalysis();
 
-            return CreatedAtRoute("GetAnalysisByID", new { id = analysisDto.AnalysisID }, analysisDto);
+            return CreatedAtRoute("GetAnalysisByID", dto);
 
-        }
+        }*/
 
+        /*
         [HttpPut("{ID}",Name = "UpdateAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -87,9 +88,9 @@ namespace MLProject.Controllers
             else
                 return NotFound("There Is No Analysis With Such ID!");
         }
-
-
-        [HttpDelete("{ID}", Name = "DeleteAnalysis")]
+        */
+        // I think it is better to make it as inactivate the analysis
+       /* [HttpDelete("{ID}", Name = "DeleteAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -104,7 +105,7 @@ namespace MLProject.Controllers
             else
                 return NotFound($"No Analysis With Such ID:{ID},no rows were Deleted!");
 
-        }
+        }*/
 
 
 

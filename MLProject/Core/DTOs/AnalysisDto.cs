@@ -13,7 +13,7 @@ namespace MlBL.DTOs
     /// </summary>
     public class AnalysisDto
     {
-        public int AnalysisID { get; set; }
+        public int? AnalysisID { get; set; }
 
         public string AnalysisName { get; set; }
 
@@ -23,6 +23,13 @@ namespace MlBL.DTOs
         public AnalysisDto(int AnalysisID, string AnalysisName, decimal AnalysisCost)
         {
             this.AnalysisID = AnalysisID;
+            this.AnalysisName = AnalysisName;
+            this.AnalysisCost = AnalysisCost;
+        }
+
+        public AnalysisDto(string AnalysisName, decimal AnalysisCost)
+        {
+            this.AnalysisID = null;
             this.AnalysisName = AnalysisName;
             this.AnalysisCost = AnalysisCost;
         }
@@ -40,5 +47,51 @@ namespace MlBL.DTOs
             this.AnalysisCost = analysis.Cost;
         }
 
+    }
+
+    public class CreateAnalysisDto 
+    {
+
+        public string AnalysisName { get; set; }
+
+        public decimal AnalysisCost { get; set; }
+
+
+        public CreateAnalysisDto(string AnalysisName, decimal AnalysisCost)
+        {
+            this.AnalysisName = AnalysisName;
+            this.AnalysisCost = AnalysisCost;
+        }
+
+        // create an analysis Dot object from analysis domain model
+
+        /// <summary>
+        /// create an analysis Dto object from analysis domain model
+        /// </summary>
+        /// <param name="analysis"></param>
+        public CreateAnalysisDto(Analysis analysis)
+        {
+            this.AnalysisName = analysis.AnalysisName;
+            this.AnalysisCost = analysis.Cost;
+        }
+        public AnalysisDto ToDto()
+        {
+            return new AnalysisDto(AnalysisName, AnalysisCost);
+        }
+    }
+   
+    public class UpdateAnalysisDto
+    {
+        public int AnalysisID { get; set; }
+        public decimal AnalysisCost { get; set; }
+
+
+        public UpdateAnalysisDto(int AnalysisID, decimal AnalysisCost)
+        {
+            this.AnalysisID = AnalysisID;
+            this.AnalysisCost = AnalysisCost;
+        }
+
+        
     }
 }
