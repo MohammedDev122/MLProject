@@ -1,11 +1,4 @@
-﻿using Core.Models;
-using MlBL.DTOs;
-using MlBL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MlBL.DTOs;
 
 namespace MlBL.Interfaces
 {

@@ -1,5 +1,4 @@
-﻿using MlBL.DTOs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +14,8 @@ namespace Core.Models
     /// </summary>
     public class Analysis
     {
-        public int AnalysisID { get; set; }
+        // can be 0 if it in adding state and Id didn't created yet
+        public int AnalysisId { get; set; }
         public string AnalysisName { get; set; }
         public decimal Cost { get; set; }
 
@@ -23,17 +23,14 @@ namespace Core.Models
 
         public Analysis (int analysisId, string analysisName, decimal cost)
         {
-            AnalysisID = analysisId;
+            AnalysisId = analysisId;
             AnalysisName = analysisName;
             Cost = cost;
         }
-
-        public Analysis (AnalysisDto analysisDto)
+        public Analysis(int analysisId, decimal cost)
         {
-            // if dto is in creating the id is null in dto and 0 in analysis model till got from DB
-            AnalysisID = analysisDto.AnalysisID?? 0;
-            AnalysisName = analysisDto.AnalysisName;
-            Cost = analysisDto.AnalysisCost;
+            AnalysisId = analysisId;
+            Cost = cost;
         }
 
     }

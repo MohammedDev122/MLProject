@@ -1,9 +1,5 @@
-using Microsoft.EntityFrameworkCore;
-using MlBL.Interfaces;
-using MlBL.Services;
-using MlDAL.DbContexts;
-using MlDAL.Interfaces;
-using MlDAL.Repositories;
+using MlBL;
+using MlDAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("TestConnection"));
-});
-builder.Services.AddScoped<IAnalysisRepository, AnalysisRepo>();
-builder.Services.AddScoped<IAnalysisService, AnalysisService>();
+
+builder.Services.AddInfraStructure(builder.Configuration);
+builder.Services.AddApplication();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -37,5 +29,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
 app.Run();

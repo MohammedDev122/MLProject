@@ -41,19 +41,17 @@ using MlDAL.Repositories;
     Console.WriteLine("Connected successfully");
     var analysisRepo = new AnalysisRepo(context);
 
+    Console.WriteLine(configuration.GetConnectionString("DefaultConnection"));  
+
     Console.WriteLine("Start");
-    var newAnalysis = new UpdateAnalysisDto(241, 100);
-    var analysis = await Update(analysisRepo, newAnalysis);
+
+    var analyses = await analysisRepo.GetAllAsync();
+
     Console.WriteLine("updated successfully");
 
-    if (analysis != null)
-    {
-         Console.WriteLine($"Id: {analysis.AnalysisID}, Name: {analysis.AnalysisName}, Cost: {analysis.AnalysisCost}");
-    }
-    else
-    {
-        Console.WriteLine("Analysis doesn't updated successfully");
-    }
+   foreach (var analysis in analyses) 
+         Console.WriteLine($"Id: {analysis.AnalysisId}, Name: {analysis.AnalysisName}, Cost: {analysis.Cost}");
+   
 
 
 async Task<List<AnalysisDto>> GetAll (AnalysisRepo repo)

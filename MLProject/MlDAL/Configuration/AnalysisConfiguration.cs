@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace MlDAL.Configuration
 {
-    internal class AnalysisConfiguration : IEntityTypeConfiguration<Analysis>
+    public class AnalysisConfiguration : IEntityTypeConfiguration<Analysis>
     {
         public void Configure(EntityTypeBuilder<Analysis> builder)
         {
-            builder.HasKey(e => e.AnalysisID);
+            builder.HasKey(e => e.AnalysisId);
 
             builder.Property(e => e.AnalysisName)
                    .HasMaxLength(20);

@@ -78,3 +78,5 @@ D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\Tracker.pdb
 D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\Tracker.genruntimeconfig.cache
 D:\ML Repo\MLProject\MLProject\Tracker\obj\Release\net8.0\ref\Tracker.dll
 D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\appsettings.json
+D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\FluentValidation.dll
+D:\ML Repo\MLProject\MLProject\Tracker\bin\Release\net8.0\FluentValidation.DependencyInjectionExtensions.dll

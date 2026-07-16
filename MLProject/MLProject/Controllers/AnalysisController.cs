@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MlBl;
 using MlBL.DTOs;
-using MlBL.Entities;
 using MlBL.Interfaces;
 using MlBL.Services;
 using MlDAL;

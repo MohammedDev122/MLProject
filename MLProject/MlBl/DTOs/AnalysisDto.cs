@@ -13,6 +13,7 @@ namespace MlBL.DTOs
     /// </summary>
     public class AnalysisDto
     {
+        // can be null if it in adding state and Id didn't created yet
         public int? AnalysisID { get; set; }
 
         public string AnalysisName { get; set; }
@@ -34,19 +35,7 @@ namespace MlBL.DTOs
             this.AnalysisCost = AnalysisCost;
         }
 
-        // create an analysis Dot object from analysis domain model
-
-        /// <summary>
-        /// create an analysis Dto object from analysis domain model
-        /// </summary>
-        /// <param name="analysis"></param>
-        public AnalysisDto(Analysis analysis) 
-        {
-            this.AnalysisID = analysis.AnalysisID;
-            this.AnalysisName = analysis.AnalysisName;
-            this.AnalysisCost = analysis.Cost;
-        }
-
+    
     }
 
     public class CreateAnalysisDto 
@@ -63,21 +52,8 @@ namespace MlBL.DTOs
             this.AnalysisCost = AnalysisCost;
         }
 
-        // create an analysis Dot object from analysis domain model
+   
 
-        /// <summary>
-        /// create an analysis Dto object from analysis domain model
-        /// </summary>
-        /// <param name="analysis"></param>
-        public CreateAnalysisDto(Analysis analysis)
-        {
-            this.AnalysisName = analysis.AnalysisName;
-            this.AnalysisCost = analysis.Cost;
-        }
-        public AnalysisDto ToDto()
-        {
-            return new AnalysisDto(AnalysisName, AnalysisCost);
-        }
     }
    
     public class UpdateAnalysisDto

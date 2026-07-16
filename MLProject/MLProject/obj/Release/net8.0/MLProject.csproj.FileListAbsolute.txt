@@ -162,3 +162,5 @@ D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.genruntime
 D:\ML Repo\MLProject\MLProject\MLProject\obj\Release\net8.0\ref\MLProject.dll
 D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\Core.dll
 D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\Core.pdb
+D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\FluentValidation.dll
+D:\ML Repo\MLProject\MLProject\MLProject\bin\Release\net8.0\FluentValidation.DependencyInjectionExtensions.dll
