@@ -2,11 +2,14 @@
 using Microsoft.AspNetCore.Mvc;
 using MlBL.DTOs;
 using MlBL.Interfaces;
+using MlBL.Validators.ContainingValidator;
 using MlBL.Validators.PackagesValidators;
+using FluentValidation;
+
 
 namespace MLProject.Controllers
 {
-    [Route("api/AnalysisController")]
+    [Route("api/ContainingController")]
     [ApiController]
     public class ContainingController : ControllerBase
     {
@@ -28,91 +31,124 @@ namespace MLProject.Controllers
             return (LContainings.Count == 0) ? NotFound(" Containings not Found!") : Ok(LContainings);
         }
 
-//        [HttpGet("GetAllPackagesPrices")]
-//        [ProducesResponseType(StatusCodes.Status200OK)]
-//        [ProducesResponseType(StatusCodes.Status404NotFound)]
-//        public async Task<ActionResult<Dictionary<int, double>>> GetAllPackagesPrices()
-//        {
-//            Dictionary<int, double> PackagesPrices = await _ContainingServices.GetAllPackagesCostAsync();
-//            return (PackagesPrices.Count == 0) ? NotFound("No Packages not Found!") : Ok(PackagesPrices);
-//        }
-//        [HttpGet("{id}", Name = "GetPackagesByID")]
-//        [ProducesResponseType(StatusCodes.Status200OK)]
-//        [ProducesResponseType(StatusCodes.Status404NotFound)]
-//        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//        public async Task<ActionResult<PackageDTO>> GetPackageByID(int id)
-//        {
-//            if (id < 0)
-//                return BadRequest("Not Accepted ID");
-//            PackageDTO? Package = await _ContainingServices.FindByID(id);
-//            return (Package == null) ?
-//             NotFound($"Package With ID:{id} is not found") : Ok(Package);
-//        }
+        [HttpGet("Package/{PackageID}", Name ="GetAllPackageContains")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        public async Task<ActionResult<IEnumerable<StringContainingDTO>>> GetAllPackageContains(int PackageID)
+        {
+            if (PackageID <= 0)
+                return BadRequest($"ID Isn't Correct!");
+            List<StringContainingDTO> LContainings = await _ContainingServices.GetAllPackageContains(PackageID);
+            return (LContainings.Count == 0) ? NotFound(" Containings not Found!") : Ok(LContainings);
+        }
+        [HttpGet("Analysis/{AnalysisID}", Name = "GetAllAnalysisContained")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        public async Task<ActionResult<IEnumerable<StringContainingDTO>>> GetAllAnalysisContained(int AnalysisID)
+        {
+            if (AnalysisID <= 0)
+                return BadRequest($"ID Isn't Correct!");
+            List<StringContainingDTO> LContainings = await _ContainingServices.GetAllAnalysisContained(AnalysisID);
+            return (LContainings.Count == 0) ? NotFound(" Containings not Found!") : Ok(LContainings);
+        }
+
+        [HttpGet("ContainID/{ContainID}", Name = "GetContainByID")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<PackageDTO>> GetContainByID(int ContainID)
+        {
+            if (ContainID <= 0)
+                return BadRequest("Not Accepted ID");
+            ContainingDTO? Contain = await _ContainingServices.FindByID(ContainID);
+            return (Contain == null) ?
+             NotFound($"Package With ID:{ContainID} is not found") : Ok(Contain);
+        }
 
 
-//        [HttpPost(Name = "AddPackage")]
-//        [ProducesResponseType(StatusCodes.Status200OK)]
-//        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//        [EndpointDescription(@"the enpackage type contain 3 option 1 for vip,2 for normal and 3 for kids.
-//the enPackageGender contain 3 options 1 for Men,2 for Women and 3 For All.
-//the enPackageStatus Contain 3 Options 1 for Dued,2 for on the market and 3 for soon.
-//the enVisit Type Contain 2 Option 1 for free and 2 for paid.")]
-//        public async Task<ActionResult<PackageDTO>> AddPackage(CreatePackageDTO newDto)
-//        {
+        [HttpPost(Name = "AddContain")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<PackageDTO>> AddContain(CreateContainingDTO newDto)
+        {
 
-//            var result = CreatePackageValidator.ValidateData(newDto);
-//            if (!result.IsValid)
-//                throw new ValidationException(result.Errors);
+            var result = CreateContainingValidator.ValidateData(newDto);
+            if (!result.IsValid)
+                throw new ValidationException(result.Errors);
 
 
-//            PackageDTO dto = await _ContainingServices.AddNew(newDto);
-
-//            // analysis.SaveAnalysis();
-
-//            return (dto != null) ? CreatedAtRoute("GetPackageByID", new { ID = dto.PackageID }, dto) : BadRequest("Error");
-
-//        }
+            ContainingDTO dto = await _ContainingServices.AddNew(newDto);
 
 
-//        [HttpPut("{ID}", Name = "UpdatePackage")]
-//        [EndpointDescription(@"the enpackage type contain 3 option 1 for vip,2 for normal and 3 for kids.
-//the enPackageGender contain 3 options 1 for Men,2 for Women and 3 For All.
-//the enPackageStatus Contain 3 Options 1 for Dued,2 for on the market and 3 for soon.
-//the enVisit Type Contain 2 Option 1 for free and 2 for paid.")]
+            return (dto != null) ? CreatedAtRoute("GetContainByID", new { ID = dto.ContainID }, dto) : BadRequest("Error");
 
-//        [ProducesResponseType(StatusCodes.Status200OK)]
-//        [ProducesResponseType(StatusCodes.Status404NotFound)]
-//        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//        public async Task<ActionResult<PackageDTO>> UpdatePackage(int ID, UpdatedPackageDto PDTO)
-//        {
-
-//            PDTO.PackageID = ID;
-//            var result = UpdatePackageValidator.ValidateData(PDTO);
-//            if (!result.IsValid)
-//                throw new ValidationException(result.Errors);
-//            // if update failed cuz the id is wrong
-//            return (await _ContainingServices.Update(PDTO)) ?
-//                 CreatedAtRoute("GetPackagesByID", new { id = PDTO.PackageID }, PDTO) :
-//                 NotFound("There Is No Analysis With Such ID!");
-//        }
-
-//        // I think it is better to make it as inactivate the analysis
-//        [HttpDelete("{ID}", Name = "DeletePackage")]
-//        [ProducesResponseType(StatusCodes.Status200OK)]
-//        [ProducesResponseType(StatusCodes.Status404NotFound)]
-//        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//        public async Task<ActionResult<bool>> DeletePackage(int ID)
-//        {
-//            if (ID < 0)
-//                return BadRequest("Incorrect ID");
-
-//            return (await _ContainingServices.Delete(ID)) ?
-//                 Ok($"Analysis With ID:{ID} Deleted Successfully!") :
-//                 NotFound($"No Analysis With Such ID:{ID},no rows were Deleted!");
-
-//        }
+        }
 
 
+
+        // I think it is better to make it as inactivate the analysis
+        [HttpDelete("ID/{ID}", Name = "DeleteContain")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<bool>> DeleteContain(int ID)
+        {
+            if (ID <= 0)
+                return BadRequest("Incorrect ID");
+
+            return (await _ContainingServices.Delete(ID)) ?
+                 Ok($"Contain With ID:{ID} Deleted Successfully!") :
+                 NotFound($"No Contain With Such ID:{ID},no rows were Deleted!");
+
+        }
+        [HttpGet("ExistID/{ExistID}", Name = "Exist")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<bool>> Exist(int ExistID)
+        {
+            if (ExistID <= 0)
+                return BadRequest("Incorrect ID");
+
+            return (await _ContainingServices.Exist(ExistID)) ?
+                 Ok($"Contain With ID:{ExistID} Deleted Successfully!") :
+                 NotFound($"No Contain With Such ID:{ExistID},no rows were Deleted!");
+
+        }
+
+        [HttpGet("AnalysisID/{AnalysisID},PackageID/{PackageID}", Name = "ExistByPackageAndAnalysisID")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<bool>> ExistByPackageAndAnalysisID(int AnalysisID,int PackageID)
+        {
+            if (AnalysisID <= 0 ||PackageID<=0)
+                return BadRequest("Incorrect ID");
+
+            return (await _ContainingServices.Exist(AnalysisID, PackageID)) ?
+                 Ok($"Contain That Have Both Analysis With ID:{AnalysisID},And Package With ID{PackageID} Deleted Successfully!") :
+                 NotFound($"No Contain  That Have Both Analysis With ID:{AnalysisID},And Package With ID{PackageID},no rows were Deleted!");
+
+        }
+
+        [HttpGet("PackageID/{PackageID}", Name = "GetAllAnalysisInPackageCost")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<double>> AnalysisInPackageCost( int PackageID)
+        {
+            if ( PackageID <= 0)
+                return BadRequest("Incorrect ID");
+            double? Cost = await _ContainingServices.GetAllAnalysisInPackageCost(PackageID);
+            return ((Cost) !=null) ?
+                 Ok(Cost) :
+                 NotFound($"No Package with  ID:{PackageID} Recorded in Containig Table");
+
+        }
 
     }
 

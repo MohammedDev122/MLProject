@@ -2599,11 +2599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\Tracker.csproj",
+      "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\Tracker.csproj",
       "projectName": "Tracker",
-      "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\Tracker.csproj",
+      "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\Tracker.csproj",
       "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\obj\\",
+      "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2624,17 +2624,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj"
+            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj"
             },
-            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
-              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj"
+            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj": {
+              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj"
             },
-            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
-              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj"
+            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
+              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj"
             },
-            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\MLProject.csproj": {
-              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\MLProject.csproj"
+            "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj": {
+              "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj"
             }
           }
         }

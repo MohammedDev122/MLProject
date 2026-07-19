@@ -1,188 +1,200 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\controllers\\recomendedpackagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\recomendedpackagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\classtobemodified\\clspackagerecomendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\core\\models\\packagescoreandprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|solutionrelative:core\\models\\packagescoreandprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\classtobemodified\\clspackagerecomendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\classtobemodified\\clspackagerecomendation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\services\\analysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\analysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\interfaces\\ianalysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ianalysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\interfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\repositories\\packagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\repositories\\packagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\repositories\\containingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\repositories\\containingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\controllers\\packagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\packagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\services\\containingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\containingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\controllers\\containingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\containingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\mlbl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\mlbl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\mldal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\mldal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\validators\\containingvalidator\\createcontainingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\containingvalidator\\createcontainingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\validators\\packagesvalidators\\createpackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\packagesvalidators\\createpackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\validators\\analysisvalidator\\createanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\analysisvalidator\\createanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\interfaces\\icontainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\icontainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\services\\packagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\packagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\services\\analysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\analysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\interfaces\\ipackagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ipackagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\mappers\\packagemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\mappers\\packagemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\repositories\\analysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\repositories\\analysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\validators\\packagesvalidators\\updatepackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\packagesvalidators\\updatepackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\validators\\analysisvalidator\\updateanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\analysisvalidator\\updateanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\dtos\\packagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\dtos\\packagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\dtos\\analysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\dtos\\analysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\core\\models\\packages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\core\\models\\packages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|solutionrelative:core\\models\\packages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\interfaces\\ipackagesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\repositories\\containingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\repositories\\containingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\controllers\\packagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\packagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\services\\analysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\analysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\analysiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\controllers\\containingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\controllers\\containingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\services\\containingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\containingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\interfaces\\icontainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\icontainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\interfaces\\ipackagerecomended.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ipackagerecomended.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\interfaces\\ipackagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ipackagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\services\\analysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\analysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\interfaces\\ianalysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ianalysisinpackages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\interfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\interfaces\\ianalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\repositories\\packagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\repositories\\packagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\mlbl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\mlbl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\mldal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\mldal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\validators\\containingvalidator\\createcontainingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\containingvalidator\\createcontainingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\validators\\packagesvalidators\\createpackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\packagesvalidators\\createpackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\validators\\analysisvalidator\\createanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\analysisvalidator\\createanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\services\\packagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\services\\packagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\mappers\\packagemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\mappers\\packagemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\repositories\\analysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\repositories\\analysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\validators\\packagesvalidators\\updatepackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\packagesvalidators\\updatepackagevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\validators\\analysisvalidator\\updateanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\validators\\analysisvalidator\\updateanalysisvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\dtos\\packagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\dtos\\packagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\dtos\\analysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\dtos\\analysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\interfaces\\ipackagesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\interfaces\\ipackagesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\core\\models\\analysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\core\\models\\analysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|solutionrelative:core\\models\\analysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\interfaces\\ianalysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\interfaces\\ianalysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\interfaces\\ianalysisrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mldal\\configuration\\analysisconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mldal\\configuration\\analysisconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E252D3B2-25A8-4E81-BA1D-628F95680196}|MlDAL\\MlDAL.csproj|solutionrelative:mldal\\configuration\\analysisconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\.filenesting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|solutionrelative:core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\tracker\\tracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\tracker\\tracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|solutionrelative:tracker\\tracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\mlproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\mlproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlbl\\mappers\\analysismapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlbl\\mappers\\analysismapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{637FF93A-FF32-457A-B372-ACDBAA0D51E0}|MlBl\\MlBL.csproj|solutionrelative:mlbl\\mappers\\analysismapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\tracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\tracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|solutionrelative:tracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\core\\failcauses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\core\\failcauses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E79924D3-1036-4288-91B3-34CE7A266AE7}|Core\\Core.csproj|solutionrelative:core\\failcauses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\mlproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A89CC3E0-444E-4317-874C-12E1BFA6173B}|MLProject\\MLProject.csproj|solutionrelative:mlproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\mlproject\\tracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|c:\\users\\win -11\\newmlproject\\mlproject\\tracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8A3571D4-0764-4442-A294-C71F5997C289}|Tracker\\Tracker.csproj|solutionrelative:tracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -202,7 +214,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -214,271 +226,193 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnalysisInPackages.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\AnalysisInPackages.cs",
-              "RelativeDocumentMoniker": "MlBl\\Services\\AnalysisInPackages.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\AnalysisInPackages.cs*",
-              "RelativeToolTip": "MlBl\\Services\\AnalysisInPackages.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T18:00:19.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAnalysisInPackages.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisInPackages.cs",
-              "RelativeDocumentMoniker": "MlBl\\Interfaces\\IAnalysisInPackages.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisInPackages.cs",
-              "RelativeToolTip": "MlBl\\Interfaces\\IAnalysisInPackages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T17:59:01.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PackageScoreAndPrice.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Models\\PackageScoreAndPrice.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\PackageScoreAndPrice.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Models\\PackageScoreAndPrice.cs",
+              "RelativeToolTip": "Core\\Models\\PackageScoreAndPrice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T23:30:46.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClsPackageRecomendation.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\ClassToBeModified\\ClsPackageRecomendation.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\ClassToBeModified\\ClsPackageRecomendation.cs",
               "RelativeDocumentMoniker": "MlBl\\ClassToBeModified\\ClsPackageRecomendation.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\ClassToBeModified\\ClsPackageRecomendation.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\ClassToBeModified\\ClsPackageRecomendation.cs",
               "RelativeToolTip": "MlBl\\ClassToBeModified\\ClsPackageRecomendation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-18T17:06:28.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PackageRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Repositories\\PackageRepo.cs",
-              "RelativeDocumentMoniker": "MlDAL\\Repositories\\PackageRepo.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Repositories\\PackageRepo.cs",
-              "RelativeToolTip": "MlDAL\\Repositories\\PackageRepo.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAcwBMBAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T13:42:34.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAnalysisService.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisService.cs",
-              "RelativeDocumentMoniker": "MlBl\\Interfaces\\IAnalysisService.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisService.cs",
-              "RelativeToolTip": "MlBl\\Interfaces\\IAnalysisService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowA8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T19:29:42.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "MlBl\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\DependencyInjection.cs*",
-              "RelativeToolTip": "MlBl\\DependencyInjection.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB8AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T06:05:02.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContainingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Repositories\\ContainingRepo.cs",
-              "RelativeDocumentMoniker": "MlDAL\\Repositories\\ContainingRepo.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Repositories\\ContainingRepo.cs",
-              "RelativeToolTip": "MlDAL\\Repositories\\ContainingRepo.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswA0BAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T13:35:46.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "AnalysisController.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Controllers\\AnalysisController.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\AnalysisController.cs",
               "RelativeDocumentMoniker": "MLProject\\Controllers\\AnalysisController.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Controllers\\AnalysisController.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\AnalysisController.cs",
               "RelativeToolTip": "MLProject\\Controllers\\AnalysisController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-03T09:29:25.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MlBL",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
-              "RelativeDocumentMoniker": "MlBl\\MlBL.csproj",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
-              "RelativeToolTip": "MlBl\\MlBL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-18T17:05:57.701Z",
+              "DocumentIndex": 0,
+              "Title": "RecomendedPackageController.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\RecomendedPackageController.cs",
+              "RelativeDocumentMoniker": "MLProject\\Controllers\\RecomendedPackageController.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\RecomendedPackageController.cs*",
+              "RelativeToolTip": "MLProject\\Controllers\\RecomendedPackageController.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T23:26:20.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "Packages.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Models\\Packages.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Packages.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Models\\Packages.cs",
+              "RelativeToolTip": "Core\\Models\\Packages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-17T18:56:23.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ContainingService.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\ContainingService.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\ContainingService.cs",
               "RelativeDocumentMoniker": "MlBl\\Services\\ContainingService.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\ContainingService.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\ContainingService.cs",
               "RelativeToolTip": "MlBl\\Services\\ContainingService.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAuwEAAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwEkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-18T13:15:30.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PackagesController.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Controllers\\PackagesController.cs",
-              "RelativeDocumentMoniker": "MLProject\\Controllers\\PackagesController.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Controllers\\PackagesController.cs",
-              "RelativeToolTip": "MLProject\\Controllers\\PackagesController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ContainingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Repositories\\ContainingRepo.cs",
+              "RelativeDocumentMoniker": "MlDAL\\Repositories\\ContainingRepo.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Repositories\\ContainingRepo.cs",
+              "RelativeToolTip": "MlDAL\\Repositories\\ContainingRepo.cs",
+              "ViewState": "AgIAAGABAAAAAAAAAAAwwHABAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T10:15:36.47Z",
+              "WhenOpened": "2026-07-18T13:35:46.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "MlDAL\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\DependencyInjection.cs",
-              "RelativeToolTip": "MlDAL\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T06:16:36.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Program.cs",
               "RelativeDocumentMoniker": "MLProject\\Program.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Program.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Program.cs",
               "RelativeToolTip": "MLProject\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAD4vxEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-03T10:17:36.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CreateContainingValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
-              "RelativeDocumentMoniker": "MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
-              "RelativeToolTip": "MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wAEAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "MlBl\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\DependencyInjection.cs",
+              "RelativeToolTip": "MlBl\\DependencyInjection.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T17:01:01.478Z",
+              "WhenOpened": "2026-07-16T06:05:02.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
+              "Title": "PackagesController.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\PackagesController.cs",
+              "RelativeDocumentMoniker": "MLProject\\Controllers\\PackagesController.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\PackagesController.cs",
+              "RelativeToolTip": "MLProject\\Controllers\\PackagesController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwHgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T10:15:36.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ContainingController.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Controllers\\ContainingController.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\ContainingController.cs",
               "RelativeDocumentMoniker": "MLProject\\Controllers\\ContainingController.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Controllers\\ContainingController.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Controllers\\ContainingController.cs",
               "RelativeToolTip": "MLProject\\Controllers\\ContainingController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwGsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-18T17:08:12.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CreateAnalysisValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
-              "RelativeDocumentMoniker": "MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
-              "RelativeToolTip": "MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\AnalysisService.cs",
+              "RelativeDocumentMoniker": "MlBl\\Services\\AnalysisService.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\AnalysisService.cs",
+              "RelativeToolTip": "MlBl\\Services\\AnalysisService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAawBwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T00:38:37.528Z",
+              "WhenOpened": "2026-07-17T17:49:50.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CreatePackageValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
-              "RelativeDocumentMoniker": "MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
-              "RelativeToolTip": "MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T00:39:26.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MlDAL.csproj",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
-              "RelativeDocumentMoniker": "MlDAL\\MlDAL.csproj",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
-              "RelativeToolTip": "MlDAL\\MlDAL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-16T19:15:37.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "IContainingService.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IContainingService.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IContainingService.cs",
               "RelativeDocumentMoniker": "MlBl\\Interfaces\\IContainingService.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IContainingService.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IContainingService.cs",
               "RelativeToolTip": "MlBl\\Interfaces\\IContainingService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvw4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA2wA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-18T14:51:15.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PackagesService.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\PackagesService.cs",
-              "RelativeDocumentMoniker": "MlBl\\Services\\PackagesService.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\PackagesService.cs",
-              "RelativeToolTip": "MlBl\\Services\\PackagesService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "IPackageRecomended.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IPackageRecomended.cs",
+              "RelativeDocumentMoniker": "MlBl\\Interfaces\\IPackageRecomended.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IPackageRecomended.cs",
+              "RelativeToolTip": "MlBl\\Interfaces\\IPackageRecomended.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T16:52:45.335Z",
+              "WhenOpened": "2026-07-18T23:29:29.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 14,
               "Title": "IPackagesService.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IPackagesService.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IPackagesService.cs",
               "RelativeDocumentMoniker": "MlBl\\Interfaces\\IPackagesService.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Interfaces\\IPackagesService.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IPackagesService.cs",
               "RelativeToolTip": "MlBl\\Interfaces\\IPackagesService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwA4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -487,63 +421,180 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AnalysisService.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\AnalysisService.cs",
-              "RelativeDocumentMoniker": "MlBl\\Services\\AnalysisService.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Services\\AnalysisService.cs",
-              "RelativeToolTip": "MlBl\\Services\\AnalysisService.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAmwCUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "PackageRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Repositories\\PackageRepo.cs",
+              "RelativeDocumentMoniker": "MlDAL\\Repositories\\PackageRepo.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Repositories\\PackageRepo.cs",
+              "RelativeToolTip": "MlDAL\\Repositories\\PackageRepo.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAcwBMBAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T17:49:50.336Z",
+              "WhenOpened": "2026-07-18T13:42:34.238Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnalysisInPackages.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\AnalysisInPackages.cs",
+              "RelativeDocumentMoniker": "MlBl\\Services\\AnalysisInPackages.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\AnalysisInPackages.cs",
+              "RelativeToolTip": "MlBl\\Services\\AnalysisInPackages.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T18:00:19.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisService.cs",
+              "RelativeDocumentMoniker": "MlBl\\Interfaces\\IAnalysisService.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisService.cs",
+              "RelativeToolTip": "MlBl\\Interfaces\\IAnalysisService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T19:29:42.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAnalysisInPackages.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisInPackages.cs",
+              "RelativeDocumentMoniker": "MlBl\\Interfaces\\IAnalysisInPackages.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Interfaces\\IAnalysisInPackages.cs",
+              "RelativeToolTip": "MlBl\\Interfaces\\IAnalysisInPackages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T17:59:01.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MlBL.csproj",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj",
+              "RelativeDocumentMoniker": "MlBl\\MlBL.csproj",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj",
+              "RelativeToolTip": "MlBl\\MlBL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-18T17:05:57.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "MlDAL\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\DependencyInjection.cs",
+              "RelativeToolTip": "MlDAL\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T06:16:36.315Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "PackageMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Mappers\\PackageMapper.cs",
-              "RelativeDocumentMoniker": "MlBl\\Mappers\\PackageMapper.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Mappers\\PackageMapper.cs",
-              "RelativeToolTip": "MlBl\\Mappers\\PackageMapper.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwA0AAAA1AAAAAAAAAA==",
+              "Title": "CreateContainingValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
+              "RelativeDocumentMoniker": "MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
+              "RelativeToolTip": "MlBl\\Validators\\ContainingValidator\\CreateContainingValidator.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wAEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T23:18:16.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AnalysisRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Repositories\\AnalysisRepo.cs",
-              "RelativeDocumentMoniker": "MlDAL\\Repositories\\AnalysisRepo.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Repositories\\AnalysisRepo.cs",
-              "RelativeToolTip": "MlDAL\\Repositories\\AnalysisRepo.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-04T16:39:39.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-18T17:01:01.478Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "MlDAL\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "MlDAL\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEMAAAAyAAAAAAAAAA==",
+              "Title": "CreateAnalysisValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
+              "RelativeDocumentMoniker": "MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
+              "RelativeToolTip": "MlBl\\Validators\\AnalysisValidator\\CreateAnalysisValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T17:43:04.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-18T00:38:37.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreatePackageValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
+              "RelativeDocumentMoniker": "MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
+              "RelativeToolTip": "MlBl\\Validators\\PackagesValidators\\CreatePackageValidator.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T00:39:26.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MlDAL.csproj",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+              "RelativeDocumentMoniker": "MlDAL\\MlDAL.csproj",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+              "RelativeToolTip": "MlDAL\\MlDAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-16T19:15:37.593Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "PackagesService.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\PackagesService.cs",
+              "RelativeDocumentMoniker": "MlBl\\Services\\PackagesService.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Services\\PackagesService.cs",
+              "RelativeToolTip": "MlBl\\Services\\PackagesService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T16:52:45.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PackageMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Mappers\\PackageMapper.cs",
+              "RelativeDocumentMoniker": "MlBl\\Mappers\\PackageMapper.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Mappers\\PackageMapper.cs",
+              "RelativeToolTip": "MlBl\\Mappers\\PackageMapper.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-16T23:18:16.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AnalysisRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Repositories\\AnalysisRepo.cs",
+              "RelativeDocumentMoniker": "MlDAL\\Repositories\\AnalysisRepo.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Repositories\\AnalysisRepo.cs",
+              "RelativeToolTip": "MlDAL\\Repositories\\AnalysisRepo.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T16:39:39.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "MlDAL\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "MlDAL\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-17T17:43:04.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "UpdatePackageValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\UpdatePackageValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\UpdatePackageValidator.cs",
               "RelativeDocumentMoniker": "MlBl\\Validators\\PackagesValidators\\UpdatePackageValidator.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\UpdatePackageValidator.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\PackagesValidators\\UpdatePackageValidator.cs",
               "RelativeToolTip": "MlBl\\Validators\\PackagesValidators\\UpdatePackageValidator.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAArwCYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -551,11 +602,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "UpdateAnalysisValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\UpdateAnalysisValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\UpdateAnalysisValidator.cs",
               "RelativeDocumentMoniker": "MlBl\\Validators\\AnalysisValidator\\UpdateAnalysisValidator.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\UpdateAnalysisValidator.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Validators\\AnalysisValidator\\UpdateAnalysisValidator.cs",
               "RelativeToolTip": "MlBl\\Validators\\AnalysisValidator\\UpdateAnalysisValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -563,11 +614,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "AnalysisDto.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\DTOs\\AnalysisDto.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\DTOs\\AnalysisDto.cs",
               "RelativeDocumentMoniker": "MlBl\\DTOs\\AnalysisDto.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\DTOs\\AnalysisDto.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\DTOs\\AnalysisDto.cs",
               "RelativeToolTip": "MlBl\\DTOs\\AnalysisDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -575,11 +626,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "PackageDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\DTOs\\PackageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\DTOs\\PackageDTO.cs",
               "RelativeDocumentMoniker": "MlBl\\DTOs\\PackageDTO.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\DTOs\\PackageDTO.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\DTOs\\PackageDTO.cs",
               "RelativeToolTip": "MlBl\\DTOs\\PackageDTO.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAA9wEAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -587,23 +638,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Packages.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Models\\Packages.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\Packages.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Models\\Packages.cs",
-              "RelativeToolTip": "Core\\Models\\Packages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T18:56:23.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "IPackagesRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Interfaces\\IPackagesRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Interfaces\\IPackagesRepo.cs",
               "RelativeDocumentMoniker": "MlDAL\\Interfaces\\IPackagesRepo.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Interfaces\\IPackagesRepo.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Interfaces\\IPackagesRepo.cs",
               "RelativeToolTip": "MlDAL\\Interfaces\\IPackagesRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -611,11 +650,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "Analysis.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Models\\Analysis.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Models\\Analysis.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Analysis.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Models\\Analysis.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Models\\Analysis.cs",
               "RelativeToolTip": "Core\\Models\\Analysis.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA5wBMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -623,11 +662,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\appsettings.json",
               "RelativeDocumentMoniker": "MLProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\appsettings.json",
               "RelativeToolTip": "MLProject\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -635,11 +674,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\DbContexts\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\DbContexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "MlDAL\\DbContexts\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\DbContexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\DbContexts\\AppDbContext.cs",
               "RelativeToolTip": "MlDAL\\DbContexts\\AppDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwA4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -647,11 +686,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "IAnalysisRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Interfaces\\IAnalysisRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Interfaces\\IAnalysisRepo.cs",
               "RelativeDocumentMoniker": "MlDAL\\Interfaces\\IAnalysisRepo.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Interfaces\\IAnalysisRepo.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Interfaces\\IAnalysisRepo.cs",
               "RelativeToolTip": "MlDAL\\Interfaces\\IAnalysisRepo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -659,11 +698,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "AnalysisConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Configuration\\AnalysisConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Configuration\\AnalysisConfiguration.cs",
               "RelativeDocumentMoniker": "MlDAL\\Configuration\\AnalysisConfiguration.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\Configuration\\AnalysisConfiguration.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\Configuration\\AnalysisConfiguration.cs",
               "RelativeToolTip": "MlDAL\\Configuration\\AnalysisConfiguration.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -671,11 +710,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": ".filenesting.json",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\.filenesting.json",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\.filenesting.json",
               "RelativeDocumentMoniker": "MLProject\\.filenesting.json",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\.filenesting.json",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\.filenesting.json",
               "RelativeToolTip": "MLProject\\.filenesting.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -683,11 +722,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Core.csproj",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj",
               "RelativeDocumentMoniker": "Core\\Core.csproj",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj",
               "RelativeToolTip": "Core\\Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -695,11 +734,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Tracker.csproj",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\Tracker.csproj",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\Tracker.csproj",
               "RelativeDocumentMoniker": "Tracker\\Tracker.csproj",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\Tracker.csproj",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\Tracker.csproj",
               "RelativeToolTip": "Tracker\\Tracker.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -707,11 +746,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "MLProject.csproj",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\MLProject.csproj",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj",
               "RelativeDocumentMoniker": "MLProject\\MLProject.csproj",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\MLProject.csproj",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj",
               "RelativeToolTip": "MLProject\\MLProject.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -719,11 +758,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "AnalysisMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Mappers\\AnalysisMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Mappers\\AnalysisMapper.cs",
               "RelativeDocumentMoniker": "MlBl\\Mappers\\AnalysisMapper.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\Mappers\\AnalysisMapper.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\Mappers\\AnalysisMapper.cs",
               "RelativeToolTip": "MlBl\\Mappers\\AnalysisMapper.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -731,11 +770,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\Program.cs",
               "RelativeDocumentMoniker": "Tracker\\Program.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\Program.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\Program.cs",
               "RelativeToolTip": "Tracker\\Program.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAAwDsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -743,11 +782,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "FailCauses.cs",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\FailCauses.cs",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\FailCauses.cs",
               "RelativeDocumentMoniker": "Core\\FailCauses.cs",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\FailCauses.cs",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\FailCauses.cs",
               "RelativeToolTip": "Core\\FailCauses.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwBsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -755,11 +794,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MLProject\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Properties\\launchSettings.json",
               "RelativeToolTip": "MLProject\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -767,11 +806,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\appsettings.json",
               "RelativeDocumentMoniker": "Tracker\\appsettings.json",
-              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Tracker\\appsettings.json",
+              "ToolTip": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Tracker\\appsettings.json",
               "RelativeToolTip": "Tracker\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -779,47 +818,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "FileConfigurationProvider.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs",
               "ToolTip": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs",
+              "RelativeToolTip": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\b38c7bbc046e461a8a58c7e0eb00bea4828feec3606c51aaae6062bc28a1448e\\FileConfigurationProvider.cs",
               "ViewState": "AgIAABwAAAAAAAAAAIBJwDQAAAAEAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T16:11:27.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "SqlBuffer.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4d94fbfcb33ae4a595c766164cea2ac11f6250eb80ad30c1b0d145df92d8e2ad\\SqlBuffer.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4d94fbfcb33ae4a595c766164cea2ac11f6250eb80ad30c1b0d145df92d8e2ad\\SqlBuffer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4d94fbfcb33ae4a595c766164cea2ac11f6250eb80ad30c1b0d145df92d8e2ad\\SqlBuffer.cs",
               "ToolTip": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4d94fbfcb33ae4a595c766164cea2ac11f6250eb80ad30c1b0d145df92d8e2ad\\SqlBuffer.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4d94fbfcb33ae4a595c766164cea2ac11f6250eb80ad30c1b0d145df92d8e2ad\\SqlBuffer.cs",
+              "RelativeToolTip": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4d94fbfcb33ae4a595c766164cea2ac11f6250eb80ad30c1b0d145df92d8e2ad\\SqlBuffer.cs",
               "ViewState": "AgIAAP8AAAAAAAAAAAAkwBYBAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T05:22:48.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "SqlConnection.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4cf8ae36d58d427b989b33aa4fc7db1d37a6f3ef854fb52e82b87d8392f0e194\\SqlConnection.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4cf8ae36d58d427b989b33aa4fc7db1d37a6f3ef854fb52e82b87d8392f0e194\\SqlConnection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4cf8ae36d58d427b989b33aa4fc7db1d37a6f3ef854fb52e82b87d8392f0e194\\SqlConnection.cs",
               "ToolTip": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4cf8ae36d58d427b989b33aa4fc7db1d37a6f3ef854fb52e82b87d8392f0e194\\SqlConnection.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4cf8ae36d58d427b989b33aa4fc7db1d37a6f3ef854fb52e82b87d8392f0e194\\SqlConnection.cs",
+              "RelativeToolTip": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\4cf8ae36d58d427b989b33aa4fc7db1d37a6f3ef854fb52e82b87d8392f0e194\\SqlConnection.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T05:01:45.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "ConstructorBindingFactory.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\8981b3050c2a1e40d0779487582e7aedb6d0b6f165cf51b3c1d0504b6c863b3e\\ConstructorBindingFactory.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\8981b3050c2a1e40d0779487582e7aedb6d0b6f165cf51b3c1d0504b6c863b3e\\ConstructorBindingFactory.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\8981b3050c2a1e40d0779487582e7aedb6d0b6f165cf51b3c1d0504b6c863b3e\\ConstructorBindingFactory.cs",
               "ToolTip": "C:\\Users\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\8981b3050c2a1e40d0779487582e7aedb6d0b6f165cf51b3c1d0504b6c863b3e\\ConstructorBindingFactory.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\8981b3050c2a1e40d0779487582e7aedb6d0b6f165cf51b3c1d0504b6c863b3e\\ConstructorBindingFactory.cs",
+              "RelativeToolTip": "..\\..\\..\\Mohamed\\AppData\\Local\\Temp\\.vsdbgsrc\\8981b3050c2a1e40d0779487582e7aedb6d0b6f165cf51b3c1d0504b6c863b3e\\ConstructorBindingFactory.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T04:55:40.261Z"
             }

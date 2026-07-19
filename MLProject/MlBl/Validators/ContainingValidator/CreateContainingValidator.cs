@@ -24,9 +24,9 @@ namespace MlBL.Validators.ContainingValidator
                             .GreaterThan(0)
                             .WithMessage("Analysis ID is required.");
         }
-        static public ValidationResult ValidateData(CreatePackageDTO CPDTO)
+        static public ValidationResult ValidateData(CreateContainingDTO CPDTO)
         {
-            CreatePackageValidator validator = new CreatePackageValidator();
+            CreateContainingValidator validator = new CreateContainingValidator();
             var Result = validator.Validate(CPDTO);
 
             return Result;

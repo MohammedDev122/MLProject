@@ -22,7 +22,7 @@ namespace MlBL.Interfaces
 
         public Task<List<StringContainingDTO>> GetAllAnalysisContained(int AnalysisID);
 
-        public Task<double> GetAllAnalysisInPackageCost(int PackageID);
+        public Task<double?> GetAllAnalysisInPackageCost(int PackageID);
 
         public Task<ContainingDTO> AddNew(CreateContainingDTO CCDTO);
 

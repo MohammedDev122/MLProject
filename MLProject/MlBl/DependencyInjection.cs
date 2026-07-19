@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using MlBL.ClassToBeModified;
 using MlBL.DTOs;
 using MlBL.Interfaces;
 using MlBL.Services;
@@ -30,6 +31,7 @@ namespace MlBL
 
             services.AddValidatorsFromAssemblyContaining<CreateContainingValidator>();
             services.AddScoped<IAnalysisInPackages, AnalysisInPackages>();
+            services.AddScoped<IPackageRecomended, PackagesRecommended>();
 
             return services;
         }

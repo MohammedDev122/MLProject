@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {}
+    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj": {
+    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
+    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
+        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj",
         "projectName": "MlBL",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
+        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj",
         "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlBl\\obj\\",
+        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,11 +97,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj"
+              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj"
+              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
+                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
+    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj",
         "projectName": "MlDAL",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj",
         "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MlDAL\\obj\\",
+        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -179,8 +179,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\Core\\Core.csproj"
+              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj"
               }
             }
           }

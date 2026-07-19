@@ -71,12 +71,12 @@ namespace MlBL.Services
 
         }
 
-        public async Task<double> GetAllAnalysisInPackageCost(int PackageID)
+        public async Task<double?> GetAllAnalysisInPackageCost(int PackageID)
         {
 
             if (PackageID <= 0) throw new ArgumentOutOfRangeException($"Package ID:{PackageID} Isn't Correct");
-            double Cost=await _Containing.GetAllPackage_SContainCost(PackageID);
-            return Cost;
+            double? Cost=await _Containing.GetAllPackage_SContainCost(PackageID);
+            return  (Cost!=null)?Cost:null;
         }
 
         public async Task<ContainingDTO> AddNew(CreateContainingDTO CCDTO)
