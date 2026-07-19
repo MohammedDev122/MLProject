@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MlDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac1a6d9c6f0a0b418e20ea12e40aff1baf9a42c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MlDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MlDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
