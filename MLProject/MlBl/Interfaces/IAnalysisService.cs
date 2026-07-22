@@ -55,18 +55,5 @@ namespace MlBL.Interfaces
         /// </returns>
         public Task<List<AnalysisDto>> GetAllAsync();
 
-        /// <summary>
-        /// Determines whether an entity with the specified ID exists.
-        /// </summary>
-        /// <param name="id">The ID of the entity to check.</param>
-        /// <returns>
-        /// A task that represents the asynchronous operation. The task result
-        /// indicates whether the entity exists.
-        /// </returns>
-        public Task<bool> ExistsAsync(int id);
-
-        public Task<AnalysisDto?> GetByNameAsync(string analysisName);
-
-        public Task<Dictionary<int, string>> GetMapAsync();
     }
 }

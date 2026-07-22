@@ -13,8 +13,9 @@ namespace MlBL.Services
 
         IContainingRepo _ContainRepo;
         IPackagesRepo _PackagesRepo;
-      public  AnalysisInPackages(IContainingRepo ContainRepo,IPackagesRepo packageRepo)
-        {
+        
+       public  AnalysisInPackages(IContainingRepo ContainRepo,IPackagesRepo packageRepo)
+       {
             _ContainRepo = ContainRepo;
             _PackagesRepo= packageRepo;
 

@@ -22,7 +22,7 @@ namespace MlBL.Services
         public async Task<PackageDTO>? FindByID(int PackageID)
         {
             if (PackageID <= 0) throw new ArgumentOutOfRangeException((nameof(PackageID)), "Package ID must be greater than zero.");
-            Packages package=await  _packagesRepo.GetByIdAsync(PackageID);
+            Package package=await  _packagesRepo.GetByIdAsync(PackageID);
             return package == null ? null : package.ToPackageDTO();
 
         }
@@ -30,7 +30,7 @@ namespace MlBL.Services
         public async Task<PackageDTO>AddNew(CreatePackageDTO CPDTO)
         {
             if (CPDTO==null)throw new ArgumentNullException(nameof(CPDTO),"Package Entity Can Not Be Null");
-            Packages Package = CPDTO.ToEntity();
+            Package Package = CPDTO.ToEntity();
          Package.PackageID= await _packagesRepo.AddAsync(Package);
             return Package.PackageID > 0 ? Package.ToPackageDTO() : null;
 
@@ -40,7 +40,7 @@ namespace MlBL.Services
         public async Task<bool> Update(UpdatedPackageDto UPDTO)
         {
             if (UPDTO == null) throw new ArgumentNullException(nameof(UPDTO), "Package Entity Can Not Be Null");
-            Packages Package = UPDTO.ToEntity();
+            Package Package = UPDTO.ToEntity();
             bool Updated= await _packagesRepo.UpdateAsync(Package);
             return Updated;
 
@@ -59,7 +59,7 @@ namespace MlBL.Services
         public async Task<List<PackageDTO>> GetAll()
         {
 
-            List<Packages> LPackages = new List<Packages>();
+            List<Package> LPackages = new List<Package>();
            LPackages=await _packagesRepo.GetAllAsync();
             return  LPackages.Select(x=>x.ToPackageDTO()).ToList();
         }

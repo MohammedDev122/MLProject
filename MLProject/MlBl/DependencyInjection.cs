@@ -31,7 +31,7 @@ namespace MlBL
 
             services.AddValidatorsFromAssemblyContaining<CreateContainingValidator>();
             services.AddScoped<IAnalysisInPackages, AnalysisInPackages>();
-            services.AddScoped<IPackageRecomended, PackagesRecommended>();
+            services.AddScoped<IRecomendedPackages, RecommendedPackages>();
 
             return services;
         }

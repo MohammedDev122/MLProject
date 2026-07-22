@@ -24,7 +24,7 @@ namespace MlDAL.Repositories
             _context = context;
         }
        
-    
+    /*
         public async Task<Dictionary<int, string>> GetMapAsync()
         {
             
@@ -34,11 +34,11 @@ namespace MlDAL.Repositories
                                 .ToDictionaryAsync(a => a.AnalysisId, a => a.AnalysisName);
 
         }
+    */
 
-        public async Task<Analysis>? GetByIdAsync(int analysisID)
+        public async Task<Analysis?> GetByIdAsync(int analysisID)
         {
-            if (analysisID <= 0)
-                throw new ArgumentOutOfRangeException(nameof(analysisID));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisID);
 
             return await _context.Analysis
                             .AsNoTracking()
@@ -46,15 +46,6 @@ namespace MlDAL.Repositories
 
         }
 
-        public async Task<Analysis>? GetByNameAsync(string analysisName)
-        {
-            ArgumentNullException.ThrowIfNullOrEmpty(analysisName, nameof(analysisName)); // Prevent received empty or null string
-
-            return await _context.Analysis
-                            .AsNoTracking()
-                            .FirstOrDefaultAsync(a => a.AnalysisName == analysisName);
-
-        }
 
         public async Task<int> AddAsync(Analysis newAnalysis)
         {
@@ -88,7 +79,7 @@ namespace MlDAL.Repositories
             analysis.Cost = updatedAnalysis.Cost;
 
             // save changes on database
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return true;
 
@@ -109,13 +100,11 @@ namespace MlDAL.Repositories
 
         public async Task<bool> DeleteAsync(int analysisID)
         {
-            if (analysisID <= 0)
-                throw new ArgumentOutOfRangeException(nameof(analysisID));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisID);
 
             // load then delete approach 
             var analysis =
-                await _context.Analysis
-                        .FirstOrDefaultAsync(s => s.AnalysisId == analysisID);
+                await GetByIdAsync(analysisID);
 
             if (analysis == null)
                 return false;   
@@ -126,13 +115,39 @@ namespace MlDAL.Repositories
             return await _context.SaveChangesAsync() > 0; // means return true if there are any rows affected
         }
 
-        public async Task<bool> ExistsAsync(int analysisID)
+
+        public async Task<Analysis?> GetByIdWithPackagesAsync(int analysisID)
         {
-            if (analysisID <= 0)
-                throw new ArgumentOutOfRangeException(nameof(analysisID));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisID);
 
             return await _context.Analysis
-                            .AnyAsync(a => a.AnalysisId == analysisID);  
+                .AsNoTracking()
+                .Include(a => a.containedPackages)
+                    .ThenInclude(p => p.package)
+                .FirstOrDefaultAsync(a => a.AnalysisId == analysisID);
+
+        }
+
+        public async Task<ICollection<Containing>?> GetContainingPackagesAsync(int analysisId)
+        {
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisId);
+
+            var analysis = await GetByIdWithPackagesAsync(analysisId);
+
+            return analysis.containedPackages;
+
+          
+        }
+
+
+        public async Task<ICollection<Analysis>> GetByIdWithPackagesAsync (ICollection<int> analysisIds)
+        {
+            return await _context.Analysis
+                .AsNoTracking()
+                .Where(a => analysisIds.Contains(a.AnalysisId))
+                .Include(a => a.containedPackages)
+                    .ThenInclude(p => p.package)
+                .ToListAsync();
         }
 
     }

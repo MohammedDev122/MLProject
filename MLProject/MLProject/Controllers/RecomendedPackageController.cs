@@ -9,9 +9,9 @@ namespace MLProject.Controllers
     [ApiController]
     public class RecomendedPackageController : ControllerBase
     {
-        IPackageRecomended _PackageRecomended;
+        IRecomendedPackages _PackageRecomended;
 
-        public RecomendedPackageController(IPackageRecomended PackageRecomended) {
+        public RecomendedPackageController(IRecomendedPackages PackageRecomended) {
         
         _PackageRecomended= PackageRecomended;
 

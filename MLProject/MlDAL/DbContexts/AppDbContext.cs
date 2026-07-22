@@ -14,13 +14,22 @@ namespace MlDAL.DbContexts
         public AppDbContext (DbContextOptions<AppDbContext> options) : base(options)
         { }
 
-        public virtual DbSet<Analysis> Analysis { get; set; }
 
+        public virtual DbSet<City> Cities { get; set; }
+        public virtual DbSet<Region> Regions { get; set; }
+        public virtual DbSet<Lab> Laps { get; set; }
+
+
+        public virtual DbSet<Analysis> Analysis { get; set; }
+        public virtual DbSet<Containing> Containings { get; set; }
+        public virtual DbSet<Package> Packages { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new AnalysisConfiguration());   
+            modelBuilder.ApplyConfiguration(new ContainingConfiguration());
+            modelBuilder.ApplyConfiguration(new PackageConfiguration());    
         }
 
     }

@@ -82,14 +82,6 @@ namespace MlBL.Services
         }
 
 
-        public async Task<AnalysisDto?> GetByNameAsync(string analysisName)
-        {
-            ArgumentNullException.ThrowIfNullOrEmpty(analysisName);
-
-            Analysis analysis = await _analysisRepository.GetByNameAsync(analysisName);
-
-            return analysis.ToDto();
-        }
 
         public async Task<List<AnalysisDto>> GetAllAsync ()
         { 
@@ -99,20 +91,6 @@ namespace MlBL.Services
             .ToList();
         }
 
-
-        public async Task<Dictionary<int, string>> GetMapAsync()
-        {
-            return await _analysisRepository.GetMapAsync();
-        }
-
-
-        public async Task<bool> ExistsAsync(int analysisID)
-        { 
-            if (analysisID <= 0)
-                throw new ArgumentOutOfRangeException();
-
-            return await _analysisRepository.ExistsAsync(analysisID);
-        }
 
     }
 }

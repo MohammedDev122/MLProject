@@ -340,3 +340,15 @@ C:\Users\Win -11\NewMLProject\MLProject\MLProject\obj\Release\net8.0\refint\MLPr
 C:\Users\Win -11\NewMLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.pdb
 C:\Users\Win -11\NewMLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.genruntimeconfig.cache
 C:\Users\Win -11\NewMLProject\MLProject\MLProject\obj\Release\net8.0\ref\MLProject.dll
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.csproj.AssemblyReference.cache
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\rpswa.dswa.cache.json
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.AssemblyInfoInputs.cache
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.AssemblyInfo.cs
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.csproj.CoreCompileInputs.cache
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.MvcApplicationPartsAssemblyInfo.cs
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.MvcApplicationPartsAssemblyInfo.cache
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.sourcelink.json
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.dll
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\refint\MLProject.dll
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.pdb

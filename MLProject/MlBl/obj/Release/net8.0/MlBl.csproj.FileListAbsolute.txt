@@ -67,3 +67,12 @@ C:\Users\Win -11\NewMLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.dll
 C:\Users\Win -11\NewMLProject\MLProject\MlBl\obj\Release\net8.0\refint\MlBL.dll
 C:\Users\Win -11\NewMLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.pdb
 C:\Users\Win -11\NewMLProject\MLProject\MlBl\obj\Release\net8.0\ref\MlBL.dll
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.csproj.AssemblyReference.cache
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.GeneratedMSBuildEditorConfig.editorconfig
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.AssemblyInfoInputs.cache
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.AssemblyInfo.cs
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.csproj.CoreCompileInputs.cache
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.sourcelink.json
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.dll
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\refint\MlBL.dll
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.pdb

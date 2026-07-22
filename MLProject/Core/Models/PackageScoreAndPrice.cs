@@ -8,14 +8,26 @@ namespace Core.Models
 {
     public class PackageScoreAndPrice
     {
+
+        public int packageId { get; set; }
+        public string packageName { get; set; }
+        public string PackagePhotoPath { get; set; }
+        public double PackageCost { get; set; }
+
         public int PackageScore { get; set; }
-        public double PackagePrice { get; set; }
-        public List<int> RemainAnalysis  { get; set; }
-      public  PackageScoreAndPrice()
+
+        public  PackageScoreAndPrice(Package package)
         {
-            PackageScore = 0;
-            PackagePrice = 0;
-            RemainAnalysis = new List<int>();
+            PackageScore = 1;
+
+            packageId = package.PackageID;
+            packageName = package.PackageName;
+            PackagePhotoPath = package.PackagePhotoPath;
+            PackageCost = package.PackageCost;  
+        }
+        public void IncreaseScoreByOne ()
+        {
+            this.PackageScore++;
         }
     }
 }

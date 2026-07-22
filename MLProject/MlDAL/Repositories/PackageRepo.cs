@@ -1,6 +1,9 @@
 ﻿using Core.Models;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.VisualBasic;
+using MlDAL.DbContexts;
 using MlDAL.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,362 +14,121 @@ using System.Threading.Tasks;
 
 namespace MlDAL.Repositories
 {
-    public class PackageRepo:IPackagesRepo
+    public class PackageRepo : IPackagesRepo
     {
-        string ConnectionString;
 
-        public PackageRepo()
+        private readonly AppDbContext _context;
+
+        public PackageRepo (AppDbContext context)
+        {
+            _context = context;
+        }
+      
+        public async Task<List<Package>> GetAllAsync()
+         {
+            return await _context.Packages
+                                .Select(p => new Package
+                                (
+                                    p.PackageID, p.PackageName, p.PackagePhotoPath, p.PackageType,
+                                    p.PackageGender, p.packageStatus, p.VisitType, p.PackageCost
+                                ))
+                                .AsNoTracking()
+                                .ToListAsync();
+         }
+
+        public async Task<Dictionary<int, double>> GetAllPackagesCostAsync()
+        {
+            
+            return await _context.Packages
+                                    .AsNoTracking()
+                                    .ToDictionaryAsync(
+                                    p => p.PackageID,
+                                    p => p.PackageCost);
+
+        }  
+            
+        public async Task<int> AddAsync(Package newPackage)
         {
 
-            ConnectionString = "Server=.;Database=DBCallCenterData;User ID=sa;password=123456;TrustServerCertificate=True;";
+            ArgumentNullException.ThrowIfNull(newPackage);
+
+            _context.Packages.Add(newPackage);
+
+            await _context.SaveChangesAsync();  
+
+            return newPackage.PackageID;   
 
         }
 
-        // packages
-        public async Task<Packages>? GetByIdAsync(int PackageID)
+         public async Task <bool> UpdateAsync(Package updatedPackage)
+         {
+           
+            ArgumentNullException.ThrowIfNull(updatedPackage);
+
+            var package = await _context.Packages
+                .FirstOrDefaultAsync(p => p.PackageID == updatedPackage.PackageID);
+
+            if (package == null) 
+                return false;
+
+            package.PackageCost = updatedPackage.PackageCost;
+            package.PackageName = updatedPackage.PackageName;
+            package.PackageType = updatedPackage.PackageType;
+            package.PackagePhotoPath = updatedPackage.PackagePhotoPath;
+            package.PackageGender = updatedPackage.PackageGender;
+            package.VisitType = updatedPackage.VisitType;   
+            package.packageStatus = updatedPackage.packageStatus;
+
+            await _context.SaveChangesAsync();
+            
+            return true;
+
+         }
+
+        public async Task<Package?> GetByIdAsync(int packageID)
         {
-            Packages Package = new Packages();
-            bool Found = false;
-            SqlConnection Connection = new SqlConnection(ConnectionString);
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(packageID);
 
-
-            string Query = @"
-SELECT 
-       Cost,
-       PackageName,
-       PackageTypeID,
-       PackagePhoto,
-PackageGenderID,
-VisitTypeID,
-PackageStatusID
-  FROM Packages
-  where PackageID=@PackageID";
-            SqlCommand command = new SqlCommand(Query, Connection);
-            command.Parameters.AddWithValue("@PackageID", PackageID);
-            try
-            {
-
-                Connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                if (Reader.Read())
-                {
-
-
-
-                    Package.PackageCost = Convert.ToDouble(Reader["Cost"]);
-
-                    Package.PackageName = Convert.ToString(Reader["PackageName"]);
-                    Package.PackageType = (enPackageType)Reader["PackageTypeID"];
-                    Package.PackagePhotoPath = Convert.ToString(Reader["PackagePhoto"]);
-
-                   Package.PackageGender = (enPackageGender)Reader["PackageGenderID"];
-                    Package.VisitType = (enVisitType)Reader["VisitTypeID"];
-                    Package.packageStatus = (enPackageStatus)Reader["PackageStatusID"];
-                    Package.PackageID = PackageID;
-                    Found = true;
-
-
-                }
-
-
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-
-            return Found? Package:null;
-
-
-
-
+            return await _context.Packages
+                .AsNoTracking()
+                .FirstOrDefaultAsync(p => p.PackageID == packageID);
+            
         }
-         public async Task<int> AddAsync(Packages Package)
-        {
-            SqlConnection Connection = new SqlConnection(ConnectionString);
 
-            string Query = @"
-INSERT INTO Packages
-           (Cost
-           ,PackageName
-           ,PackageTypeID
-           ,PackagePhoto,
-PackageGenderID,
-VisitTypeID
-,PackageStatusID)
-     VALUES
-           (@Cost
-           ,@PackageName
-           ,@PackageTypeID
-           ,@PackagePhoto,
-@PackageGenderID
-,@VisitTypeID,
-@PackageStatusID)
-		   select SCOPE_IDENTITY();";
-            SqlCommand command = new SqlCommand(Query, Connection);
-            command.Parameters.AddWithValue("@Cost", Package.PackageCost);
-
-
-            command.Parameters.AddWithValue("@PackageName",Package.PackageName);
-
-
-            command.Parameters.AddWithValue("@PackageTypeID",Convert.ToInt32(Package.PackageType));
-
-            command.Parameters.AddWithValue("@PackagePhoto",Package.PackagePhotoPath);
-            command.Parameters.AddWithValue("@PackageGenderID", Convert.ToInt32(Package.PackageGender));
-            command.Parameters.AddWithValue("@VisitTypeID", Convert.ToInt32(Package.VisitType));
-            command.Parameters.AddWithValue("@PackageStatusID", Convert.ToInt32(Package.packageStatus));
-
-            try
-            {
-
-                Connection.Open();
-                object Result = command.ExecuteScalar();
-                if (Result != null & int.TryParse(Convert.ToString(Result), out int InsertedID))
-                {
-                    Package.PackageID = InsertedID;
-
-
-
-
-
-                }
-              
-
-
-
-
-
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-            return Package.PackageID;
-
-
-
-
-        }
-         public async Task <bool> UpdateAsync(Packages Package)
-        {
-            bool Updated = false;
-            SqlConnection Connection = new SqlConnection(ConnectionString);
-            string Query = @"UPDATE packages
-   SET Cost = @Cost
-      ,PackageName = @PackageName
-      ,PackageTypeID = @PackageTypeID
-      ,PackagePhoto = @PackagePhoto
-      ,PackageGenderID = @PackageGenderID
-
-      ,VisitTypeID = @VisitTypeID
-      ,PackageStatusID = @PackageStatusID
- WHERE PackageID=@PackageID";
-
-            SqlCommand command = new SqlCommand(Query, Connection);
-            command.Parameters.AddWithValue("@PackageID", Package.PackageID);
-            command.Parameters.AddWithValue("@Cost", Package.PackageCost);
-            command.Parameters.AddWithValue("@PackageName", Package.PackageName);
-            command.Parameters.AddWithValue("@PackageTypeID", Convert.ToInt32(Package.PackageType));
-            command.Parameters.AddWithValue("@PackagePhoto", Package.PackagePhotoPath);
-            command.Parameters.AddWithValue("@PackageGenderID", Convert.ToInt32(Package.PackageGender));
-            command.Parameters.AddWithValue("@VisitTypeID", Convert.ToInt32(Package.VisitType));
-            command.Parameters.AddWithValue("@PackageStatusID", Convert.ToInt32(Package.packageStatus));
-
-
-
-            try
-            {
-                Connection.Open();
-                int Result = command.ExecuteNonQuery();
-                if (Result > 0)
-                {
-
-                    Updated = true;
-                }
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-
-
-            return Updated;
-
-
-
-
-        }
          public async Task<bool> DeleteAsync(int PackageID)
+         {
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(PackageID);
+            
+            var package = await GetByIdAsync(PackageID);
+
+            if (package == null) 
+                return false;
+
+            _context.Packages.Remove(package);
+
+            return await _context.SaveChangesAsync() > 0;  // means return true if there are any rows affected
+
+         }
+ 
+        public async Task<Package?> GetByIdWithAnalysesAsync(int packageID)
         {
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(packageID);
 
-
-
-
-            bool Delete = false;
-            SqlConnection Connection = new SqlConnection(ConnectionString);
-            string Query = @"Delete from packages
- WHERE PackageID=@PackageID";
-
-            SqlCommand command = new SqlCommand(Query, Connection);
-            command.Parameters.AddWithValue("@PackageID", PackageID);
-
-
-            try
-            {
-                Connection.Open();
-                int Result = command.ExecuteNonQuery();
-                if (Result > 0)
-                {
-
-                    Delete = true;
-                }
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-
-
-            return Delete;
-
-
-
-
-
-        }
-         public async Task<List<Packages>> GetAllAsync()
-        {
-            List<Packages>packagesList=new List<Packages> ();
-            Packages Package = new Packages();
-            SqlConnection Connection = new SqlConnection(ConnectionString);
-            DataTable dtPackages = new DataTable();
-            string Query = @"SELECT        Packages.PackageID, Packages.PackageName, Packages.Cost, Packages.PackageTypeID as PackageType,
-Packages.PackageGenderID, Packages.VisitTypeID as VisitType, Packages.PackageStatusID, Packages.PackagePhoto
-FROM            Packages INNER JOIN
-                         PackageTypes ON Packages.PackageTypeID = PackageTypes.PackageTypeID INNER JOIN
-                         PackageStatus ON Packages.PackageStatusID = PackageStatus.PackageStatusID INNER JOIN
-                         PackageGenders ON Packages.PackageGenderID = PackageGenders.PackageGenderID INNER JOIN
-                         VisitTypes ON Packages.VisitTypeID = VisitTypes.VisitTypeID
-";
-            SqlCommand command = new SqlCommand(Query, Connection);
-            try
-            {
-
-                Connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                while (Reader.Read()) { 
-                Package.PackageID = Reader.GetInt32(0);
-                    Package.PackageName = Reader.GetString(1);
-                    Package.PackageCost=Convert.ToDouble(Reader.GetDecimal(2));
-                    Package.PackageType = (enPackageType)Reader.GetInt32(3);
-                    Package.PackageGender = (enPackageGender)Reader.GetInt32(4);
-                    Package.VisitType=(enVisitType)Reader.GetInt32(5);
-                    Package.packageStatus=(enPackageStatus)Reader.GetInt32(6);
-                    Package.PackagePhotoPath = Reader.GetString(7);
-                packagesList.Add(Package);
-                    Package = new Packages();
-                
-                
-                }
-
-
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-            return  packagesList;
-
-
-
-
+            return await _context.Packages
+                .AsNoTracking()
+                .Include(p => p.containingAnalyses) // this fill only the Analysis Ids not the object cuz that what containings table has
+                    .ThenInclude(c => c.analysis) // this fill tha analysis object also
+                .FirstOrDefaultAsync(p => p.PackageID == packageID);
         }
 
-         public async Task<Dictionary<int, double>> GetAllPackagesCostAsync()
+        public async Task<ICollection<Containing>?> GetPackageAnalyses (int id)
         {
-            int packageID = -1;
-            double Cost = 0;
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(id);
 
-            SqlConnection Connection = new SqlConnection(ConnectionString);
-            Dictionary<int, double> Result = new Dictionary<int, double>();
-            string Query = @"SELECT        PackageID,Cost FROM            Packages;
-";
-            SqlCommand command = new SqlCommand(Query, Connection);
-            try
-            {
+            var package = await GetByIdWithAnalysesAsync(id);
 
-                Connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                if (Reader.HasRows)
-                {
-                    while (Reader.Read())
-                    {
-
-                        packageID = (int)Reader["PackageID"];
-                        Cost = Convert.ToDouble(Reader["Cost"]);
-
-
-                        if (!Result.ContainsKey(packageID))
-                        {
-                            Result[packageID] = Cost;
-                        }
-                    }
-
-
-                }
-
-
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-            return Result;
-
-
-
-
+            return package.containingAnalyses;
         }
-
-
-
-         public async Task<bool> ExistsAsync(int PackageID)
-        {
-            bool Exist = false;
-            SqlConnection Connection = new SqlConnection(ConnectionString);
-
-            string Query = @"
-SELECT 
-     Found=1 from packages
-  where PackageID=@PackageID";
-            SqlCommand command = new SqlCommand(Query, Connection);
-            command.Parameters.AddWithValue("@PackageID", PackageID);
-            try
-            {
-
-                Connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                if (Reader.HasRows)
-                {
-
-                    Exist = true;
-
-
-
-                }
-
-
-            }
-            catch (Exception ex) { }
-            finally { Connection.Close(); }
-            return Exist;
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

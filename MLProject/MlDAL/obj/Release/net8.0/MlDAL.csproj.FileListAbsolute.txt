@@ -64,3 +64,12 @@ C:\Users\Win -11\NewMLProject\MLProject\MlDAL\obj\Release\net8.0\refint\MlDAL.dl
 C:\Users\Win -11\NewMLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.pdb
 C:\Users\Win -11\NewMLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.genruntimeconfig.cache
 C:\Users\Win -11\NewMLProject\MLProject\MlDAL\obj\Release\net8.0\ref\MlDAL.dll
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.csproj.AssemblyReference.cache
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.AssemblyInfoInputs.cache
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.AssemblyInfo.cs
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.csproj.CoreCompileInputs.cache
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.sourcelink.json
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.dll
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\refint\MlDAL.dll
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.pdb

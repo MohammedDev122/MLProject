@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj": {}
+    "D:\\ML project\\MLProject\\MLProject\\MLProject\\MLProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
+    "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\obj\\",
+        "projectPath": "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML project\\MLProject\\MLProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,20 +69,20 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj": {
+    "D:\\ML project\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj",
+        "projectUniqueName": "D:\\ML project\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
         "projectName": "MlBL",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\obj\\",
+        "projectPath": "D:\\ML project\\MLProject\\MLProject\\MlBl\\MlBL.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML project\\MLProject\\MLProject\\MlBl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,11 +97,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj"
+              "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj": {
+                "projectPath": "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj"
+              "D:\\ML project\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
+                "projectPath": "D:\\ML project\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj"
               }
             }
           }
@@ -151,20 +151,20 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
+    "D:\\ML project\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+        "projectUniqueName": "D:\\ML project\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
         "projectName": "MlDAL",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\MlDAL.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlDAL\\obj\\",
+        "projectPath": "D:\\ML project\\MLProject\\MLProject\\MlDAL\\MlDAL.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML project\\MLProject\\MLProject\\MlDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -179,8 +179,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj"
+              "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj": {
+                "projectPath": "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj"
               }
             }
           }
@@ -252,20 +252,20 @@
         }
       }
     },
-    "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj": {
+    "D:\\ML project\\MLProject\\MLProject\\MLProject\\MLProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj",
+        "projectUniqueName": "D:\\ML project\\MLProject\\MLProject\\MLProject\\MLProject.csproj",
         "projectName": "MLProject",
-        "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\MLProject.csproj",
-        "packagesPath": "C:\\Users\\Win -11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MLProject\\obj\\",
+        "projectPath": "D:\\ML project\\MLProject\\MLProject\\MLProject\\MLProject.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\ML project\\MLProject\\MLProject\\MLProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win -11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -280,11 +280,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\Core\\Core.csproj"
+              "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj": {
+                "projectPath": "D:\\ML project\\MLProject\\MLProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj": {
-                "projectPath": "C:\\Users\\Win -11\\NewMLProject\\MLProject\\MlBl\\MlBL.csproj"
+              "D:\\ML project\\MLProject\\MLProject\\MlBl\\MlBL.csproj": {
+                "projectPath": "D:\\ML project\\MLProject\\MLProject\\MlBl\\MlBL.csproj"
               }
             }
           }
