@@ -19,11 +19,13 @@ namespace MlDAL.Configuration
 
             builder.Property(x => x.Name)
                 .IsRequired()
-                .HasMaxLength(25);
+                .HasMaxLength(25)
+                .HasColumnName("LapName");
 
             builder.Property(x => x.Address)
                .IsRequired()
-               .HasMaxLength(120);
+               .HasMaxLength(120)
+               .HasColumnName("LapAddress");
 
             builder.HasOne(x => x.Region)
                 .WithMany(r => r.labs)

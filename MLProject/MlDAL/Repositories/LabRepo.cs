@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MlDAL.Repositories
 {
-    public class LabRepo : IPlaceRepo<Lab>
+    public class LabRepo : ILabRepo
     {
         private readonly AppDbContext _context;
 
@@ -69,15 +69,7 @@ namespace MlDAL.Repositories
         {
             ArgumentNullException.ThrowIfNull(updatedLab);
 
-            var lab = await GetByIdAsync(updatedLab.Id);
-
-            if (lab == null)
-                return false;
-
-            lab.Name = updatedLab.Name;
-            lab.Address = updatedLab.Address;
-            lab.RegionId = updatedLab.RegionId;
-            lab.Status = updatedLab.Status;
+            _context.Laps.Update(updatedLab);
             
             return await _context.SaveChangesAsync() > 0;
 

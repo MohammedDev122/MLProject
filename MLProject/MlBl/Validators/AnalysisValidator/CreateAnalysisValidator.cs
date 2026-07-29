@@ -16,7 +16,7 @@ namespace MlBL.Validators.AnalysisValidator
                             .WithMessage("Analysis name cannot exceed 150 characters.");
 
             RuleFor(x => x.AnalysisCost)
-                            .LessThan(0)
+                            .GreaterThan(0)
                             .WithMessage("Analysis cost must be greater than zero.");
         }
     }

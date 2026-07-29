@@ -27,14 +27,14 @@ namespace Core.Models
 
         public enLabType labType { get; set; }
      
-        public Lab (int id, string name, string address, int regionId, enLabStatus status, enLabType labTyoe = enLabType.Branch)
+        public Lab (int id, string name, string address, int regionId, enLabStatus status, enLabType labType = enLabType.Branch)
         {
             Id = id;
             Name = name;
             Address = address;
             RegionId = regionId;
             Status = status;
-            this.labTyoe = labTyoe;
+            this.labType = labType;
         }
     }
 }

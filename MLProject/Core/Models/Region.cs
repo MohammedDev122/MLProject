@@ -8,7 +8,7 @@ namespace Core.Models
 {
     public class Region
     {
-        public int Id { get; set; }
+        public int RegionID { get; set; }
         public string Name { get; set; }
 
         public int CityId { get; set; } 
@@ -17,9 +17,10 @@ namespace Core.Models
         public ICollection<Lab> labs { get; set; } 
             = new List<Lab>();
 
-        public Region (int id,string Name, int cityId)
+        public Region (int regionID,string Name, int cityId)
         {
-            Id = id;
+            RegionID = regionID;
+            this.Name = Name;
             CityId = cityId;
         }
     }

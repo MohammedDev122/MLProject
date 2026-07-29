@@ -70,6 +70,15 @@ D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.AssemblyInfoInp
 D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.AssemblyInfo.cs
 D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.csproj.CoreCompileInputs.cache
 D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.sourcelink.json
+D:\ML project\MLProject\MLProject\MlDAL\bin\Release\net8.0\MlDAL.deps.json
+D:\ML project\MLProject\MLProject\MlDAL\bin\Release\net8.0\MlDAL.runtimeconfig.json
+D:\ML project\MLProject\MLProject\MlDAL\bin\Release\net8.0\MlDAL.dll
+D:\ML project\MLProject\MLProject\MlDAL\bin\Release\net8.0\MlDAL.pdb
+D:\ML project\MLProject\MLProject\MlDAL\bin\Release\net8.0\Core.dll
+D:\ML project\MLProject\MLProject\MlDAL\bin\Release\net8.0\Core.pdb
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.csproj.Up2Date
 D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.dll
 D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\refint\MlDAL.dll
 D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.pdb
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\MlDAL.genruntimeconfig.cache
+D:\ML project\MLProject\MLProject\MlDAL\obj\Release\net8.0\ref\MlDAL.dll

@@ -20,6 +20,12 @@ namespace MlDAL.Configuration
                 .HasMaxLength(30);
 
             builder.Property(p => p.PackageCost)
+                .HasColumnName("Cost");
+
+            builder.Property(p => p.PackagePhotoPath)
+               .HasColumnName("PackagePhoto");
+
+            builder.Property(p => p.PackageCost)
                 .IsRequired()
                 .HasColumnType("decimal(10, 2)");
 

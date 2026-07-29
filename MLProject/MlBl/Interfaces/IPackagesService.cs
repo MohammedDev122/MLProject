@@ -21,7 +21,6 @@ namespace MlBL.Interfaces
 
        Task<bool> Update(UpdatedPackageDto UPDTO);
        Task<bool> Delete(int PackageID);
-       Task<bool> Exist(int PackageID);
         Task<Dictionary<int, double>> GetAllPackagesCostAsync();
 
     }

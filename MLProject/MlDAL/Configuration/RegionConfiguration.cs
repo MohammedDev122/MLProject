@@ -10,11 +10,12 @@ namespace MlDAL.Configuration
 
         public void Configure (EntityTypeBuilder<Region> builder)
         {
-            builder.HasKey(r => r.Id);
+            builder.HasKey(r => r.RegionID);
 
             builder.Property(r => r.Name)
                 .IsRequired()
-                .HasMaxLength(25);
+                .HasMaxLength(25)
+                .HasColumnName("RegionName");
 
             builder.HasOne(r => r.city)
                 .WithMany(c => c.Regions)

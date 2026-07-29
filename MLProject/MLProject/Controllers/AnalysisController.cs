@@ -27,10 +27,10 @@ namespace MLProject.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<IEnumerable<AnalysisDto>>> GetAllAnalysis()
         {
-            List<AnalysisDto> analysis = await _analysisService.GetAllAsync();
+            var analysis = await _analysisService.GetAllAsync();
 
-            if (analysis.Count == 0)
-                return NotFound("No Analysis not Found!");
+            if (!analysis.Any())
+                return NotFound("No Analyses Founded!");
 
             return Ok(analysis);
 
@@ -40,15 +40,15 @@ namespace MLProject.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<AnalysisDto>> GetAnalysisByID(int id)
+        public async Task<ActionResult<AnalysisDto>> GetAnalysisByID(int Id)
         {
-            if (id < 0)
+            if (Id <= 0)
                 return BadRequest("Not Accepted ID");
 
-            AnalysisDto? analysis = await _analysisService.GetByIdAsync(id);
+            AnalysisDto? analysis = await _analysisService.GetByIdAsync(Id);
 
             if (analysis == null)
-                return NotFound($"Analysis With ID:{id} is not found");
+                return NotFound($"Analysis With Id:{Id} is not found");
 
             return Ok(analysis);
 
@@ -58,17 +58,12 @@ namespace MLProject.Controllers
         [HttpPost( Name = "AddAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<AnalysisDto>> AddAnalysis(CreateAnalysisDto newDto)
+        public async Task<ActionResult<AnalysisDto>> AddAnalysis(CreateAnalysisDto newDto) 
         {
-            if (newDto == null || string.IsNullOrEmpty(newDto.AnalysisName) || newDto.AnalysisCost < 0)
-                return BadRequest("Data is Incomplete!");
-
             AnalysisDto dto = await _analysisService.AddAsync(newDto);
            
-            // analysis.SaveAnalysis();
 
-            return CreatedAtRoute("GetAnalysisByID", new { ID = dto.AnalysisID},dto);
-
+            return CreatedAtRoute("GetAnalysisByID", new { ID = dto.Id},dto);
         }
 
 
@@ -76,36 +71,30 @@ namespace MLProject.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<AnalysisDto>> UpdateAnalysis(int ID, UpdateAnalysisDto analysisDto)
+        public async Task<ActionResult<AnalysisDto>> UpdateAnalysis(int Id, UpdateAnalysisDto analysisDto)
         {
-            if (analysisDto == null || ID <= 0 || analysisDto.AnalysisCost < 0)
-                return BadRequest("Data is Incomplete!");
-            analysisDto.AnalysisID = ID;
+            analysisDto.Id = Id;
             var dto = analysisDto.ToDto();
 
             // if update failed cuz the id is wrong
-            if (await _analysisService.UpdateAsync(analysisDto)) 
-            return CreatedAtRoute("GetAnalysisByID", new { id = analysisDto.AnalysisID }, analysisDto);
-
-            else
-                return NotFound("There Is No Analysis With Such ID!");
+            return (await _analysisService.UpdateAsync(analysisDto)) ?
+                CreatedAtRoute("GetAnalysisByID", new { id = analysisDto.Id }, analysisDto) 
+                : NotFound("Analysis With Id:{Id} is not found");
         }
         
         // I think it is better to make it as inactivate the analysis
-       [HttpDelete("{ID}", Name = "DeleteAnalysis")]
+        [HttpDelete("{ID}", Name = "DeleteAnalysis")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<bool>> DeleteAnalysis(int ID)
+        public async Task<ActionResult<bool>> DeleteAnalysis(int Id)
         {
-            if (ID < 0)
-                return BadRequest("Incorrect ID");
+            if (Id <= 0)
+                return BadRequest("Incorrect Id");
           
-            if(await _analysisService.DeleteAsync(ID))
-                return Ok($"Analysis With ID:{ID} Deleted Successfully!");
-
-            else
-                return NotFound($"No Analysis With Such ID:{ID},no rows were Deleted!");
+            return (await _analysisService.DeleteAsync(Id)) ?
+                 Ok($"Analysis With ID:{Id} deleted successfully!")
+                 : NotFound($"Analysis With Id:{Id} is not found");
 
         }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MlBL.Services
 {
-    public class AnalysisInPackages:IAnalysisInPackages
+    public class AnalysisInPackages
     {
 
         IContainingRepo _ContainRepo;
@@ -19,7 +19,7 @@ namespace MlBL.Services
             _ContainRepo = ContainRepo;
             _PackagesRepo= packageRepo;
 
-        }
+        }/*
         public  async Task<Dictionary<int, List<int>>> Analysis_Package()
         {
             return await _ContainRepo.GetAllAnalysis_Packages();
@@ -31,7 +31,7 @@ namespace MlBL.Services
         public  async Task<Dictionary<int, double>> PackagesCost()
         {
             return await _PackagesRepo.GetAllPackagesCostAsync();
-        }
+        }*/
 
 
     }

@@ -12,7 +12,7 @@ namespace MlBL.Validators.AnalysisValidator
     {
         public UpdateAnalysisValidator() 
         {
-            RuleFor(x => x.AnalysisID)
+            RuleFor(x => x.Id)
                     .GreaterThan(0);
 
             RuleFor(x => x.AnalysisCost)

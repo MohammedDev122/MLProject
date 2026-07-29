@@ -49,7 +49,6 @@ namespace MlBL.Services
         public async Task<bool> Delete(int PackageID)
         {
             if (PackageID <= 0) throw new ArgumentOutOfRangeException(nameof(PackageID), "Package ID must be greater than zero.");
-            if (!await Exist(PackageID)) return false;
             bool Deleted = await _packagesRepo.DeleteAsync(Convert.ToInt32(PackageID));
             return Deleted;
 
@@ -63,12 +62,7 @@ namespace MlBL.Services
            LPackages=await _packagesRepo.GetAllAsync();
             return  LPackages.Select(x=>x.ToPackageDTO()).ToList();
         }
-        public async Task<bool>Exist(int PackageID)
-        {
-
-            return await _packagesRepo.ExistsAsync(PackageID);
-
-        }
+       
         public async Task<Dictionary<int, double>> GetAllPackagesCostAsync()
         {
             Dictionary<int, double> AllPCost =await _packagesRepo.GetAllPackagesCostAsync();

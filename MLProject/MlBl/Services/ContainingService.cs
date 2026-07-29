@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace MlBL.Services
 {
-    public class ContainingService:IContainingService
-    {
+    public class ContainingService // : IContainingService
+    {/*
         IContainingRepo _Containing;
         public ContainingService(IContainingRepo containing)
         {
@@ -119,5 +119,8 @@ namespace MlBL.Services
 
 
 
+    
+
+    */
     }
 }

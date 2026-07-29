@@ -18,8 +18,6 @@ namespace MlBL.Services
 
         private readonly IAnalysisRepository _analysisRepository;
 
-        public FailCauses.enFailCauses Cause { get; set; } // must be shared not in this file i added it to debug till fix
-
 
         public AnalysisService (IAnalysisRepository analysisRepo)
         {
@@ -34,24 +32,21 @@ namespace MlBL.Services
 
             AnalysisDto dto = newAnalysis.ToDto();
 
-            Analysis analysis = dto.ToEntity();
+            Analysis analysis = newAnalysis.ToEntity();
 
-            dto.AnalysisID = await _analysisRepository.AddAsync(analysis);
+            dto.Id = await _analysisRepository.AddAsync(analysis);
 
-            if (dto.AnalysisID > 0)
-                return dto;
-
-            // if failed to added in database
-            Cause = (FailCauses.enFailCauses.enErrorFromAnalysisDB);
-            return null;
+            return (dto.Id != 0) ? dto : null;
         }
 
         public async Task<bool> UpdateAsync(UpdateAnalysisDto updatedAnalysis)
         {
             ArgumentNullException.ThrowIfNull(updatedAnalysis); // prevent received null for a parameter that must not be null
 
-            var analysis = await _analysisRepository.GetByIdAsync(updatedAnalysis.AnalysisID);
+            var analysis = await _analysisRepository.GetByIdAsync(updatedAnalysis.Id);
 
+            if (analysis == null)
+                return false;
 
             // update it
             analysis.Cost = updatedAnalysis.AnalysisCost;
@@ -64,8 +59,7 @@ namespace MlBL.Services
         
         public async Task<bool> DeleteAsync(int analysisId)
         {
-            if (analysisId < 0)
-                throw new ArgumentOutOfRangeException();
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisId, "Analysis ID must be greater than zero.");
 
             return await _analysisRepository.DeleteAsync(analysisId);
         }
@@ -73,12 +67,12 @@ namespace MlBL.Services
     
         public async Task<AnalysisDto?> GetByIdAsync(int analysisId)
         {
-            if (analysisId <= 0)
-                throw new ArgumentOutOfRangeException(nameof(analysisId), "Analysis ID must be greater than zero.");
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisId, "Analysis ID must be greater than zero.");
 
-            Analysis analysis = await _analysisRepository.GetByIdAsync(analysisId);
 
-            return analysis.ToDto();
+            Analysis? analysis = await _analysisRepository.GetByIdAsync(analysisId);
+
+            return (analysis != null)? analysis.ToDto() : null;
         }
 
 
@@ -86,9 +80,10 @@ namespace MlBL.Services
         public async Task<List<AnalysisDto>> GetAllAsync ()
         { 
             var analyses = await _analysisRepository.GetAllAsync();
+
             return  analyses
-            .Select(a => new AnalysisDto( a.AnalysisId, a.AnalysisName, a.Cost))
-            .ToList();
+                .Select(a => a.ToDto())
+                .ToList();
         }
 
 

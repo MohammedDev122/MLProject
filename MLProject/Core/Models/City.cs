@@ -8,15 +8,15 @@ namespace Core.Models
 {
     public class City
     {
-        public int Id { get; set; }
+        public int CityId { get; set; }
         public string Name { get; set; }
 
         public ICollection<Region> Regions { get; set; } 
             = new List<Region>();
 
-        public City (int id, string name)
+        public City (int cityId, string name)
         {
-            Id = id;
+            CityId = cityId;
             Name = name;
         }
     }

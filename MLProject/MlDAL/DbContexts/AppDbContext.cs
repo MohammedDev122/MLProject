@@ -21,7 +21,7 @@ namespace MlDAL.DbContexts
 
 
         public virtual DbSet<Analysis> Analysis { get; set; }
-        public virtual DbSet<Containing> Containings { get; set; }
+        public virtual DbSet<Containing> Contains { get; set; }
         public virtual DbSet<Package> Packages { get; set; }
 
 
@@ -29,7 +29,12 @@ namespace MlDAL.DbContexts
         {
             modelBuilder.ApplyConfiguration(new AnalysisConfiguration());   
             modelBuilder.ApplyConfiguration(new ContainingConfiguration());
-            modelBuilder.ApplyConfiguration(new PackageConfiguration());    
+            modelBuilder.ApplyConfiguration(new PackageConfiguration());
+            modelBuilder.ApplyConfiguration(new LabsConfiguration());
+            modelBuilder.ApplyConfiguration(new CityConfiguration());
+            modelBuilder.ApplyConfiguration(new RegionConfiguration());
+
+            base.OnModelCreating(modelBuilder);
         }
 
     }

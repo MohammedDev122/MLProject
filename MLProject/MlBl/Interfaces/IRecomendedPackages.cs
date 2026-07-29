@@ -1,37 +1,35 @@
-﻿using MlBL.Services;
+﻿using Core.Models;
+using MlBL.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Models;
 namespace MlBL.Interfaces
 {
     public interface IRecomendedPackages
     {
-
         /// <summary>
-        /// Finds and ranks the packages that best match the requested analyses.
-        ///
-        /// Each package receives one point for every requested analysis it contains.
-        /// The resulting list is ordered by:
-        /// <list type="number">
-        /// <item>
-        /// <description>Matching score in descending order (highest score first).</description>
-        /// </item>
-        /// <item>
-        /// <description>Package cost in ascending order (lowest cost first) when scores are equal.</description>
-        /// </item>
-        /// </list>
+        /// Finds and ranks the packages that best match the specified analyses.
         /// </summary>
         /// <param name="analysesIds">
         /// The IDs of the analyses requested by the patient.
         /// </param>
+        /// <param name="requiredPackagsNum">
+        /// The maximum number of matching packages to retrieve.
+        /// </param>
+        /// <param name="LowestCostFirst">
+        /// Determines how packages with the same matching score are ordered.
+        /// If <c>true</c>, lower-cost packages are ranked first; otherwise,
+        /// higher-cost packages are ranked first.
+        /// </param>
         /// <returns>
-        /// A list of matching packages ordered from the best recommendation
-        /// to the least suitable recommendation.
+        /// A ranked collection of packages, including their matching score,
+        /// missing analyses, and package information.
         /// </returns>
-        public Task<List<PackageScoreAndPrice>> GetBestMatchingPackages(List<int> analysisIds);
+        public Task<ICollection<PackageScore>> GetBestMatchingPackages(HashSet<int> analysesIds, int requiredPackagsNum, bool LowestCostFirst)
+;
 
 
     }

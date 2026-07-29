@@ -26,7 +26,7 @@ namespace MlDAL.Repositories
 
             return await _context.Cities
                 .AsNoTracking()
-                .FirstOrDefaultAsync(c => c.Id == id);
+                .FirstOrDefaultAsync(c => c.CityId == id);
 
         }
 
@@ -37,14 +37,14 @@ namespace MlDAL.Repositories
                 .ToListAsync();
         }
 
-        public async Task<ICollection<Region>?> GetAllRegions(int cityId)
+        public async Task<ICollection<Region>?> GetAllRegionsAsync(int cityId)
         {
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(cityId);
 
             City? city = await _context.Cities
                 .AsNoTracking()
                 .Include(c => c.Regions)
-                .FirstOrDefaultAsync(c => c.Id == cityId);
+                .FirstOrDefaultAsync(c => c.CityId == cityId);
 
             if (city == null) 
                 return null;
@@ -60,7 +60,7 @@ namespace MlDAL.Repositories
 
             await _context.SaveChangesAsync();
 
-            return city.Id;
+            return city.CityId;
         }
 
         public async Task<bool> DeleteAsync(int id)
@@ -84,12 +84,7 @@ namespace MlDAL.Repositories
         {
             ArgumentNullException.ThrowIfNull(updatedCity);
 
-            var city = await GetByIdAsync(updatedCity.Id);
-
-            if (city == null) 
-                return false;
-
-            city.Name = updatedCity.Name;
+            _context.Cities.Update(updatedCity);
 
             return await _context.SaveChangesAsync() > 0;
 

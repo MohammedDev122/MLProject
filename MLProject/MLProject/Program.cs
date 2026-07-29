@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using MlBL;
 using MlDAL;
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 
 builder.Services.AddInfraStructure(builder.Configuration);
 builder.Services.AddApplication();
@@ -29,5 +32,10 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
+
+foreach (var endpoint in app.Services.GetRequiredService<Microsoft.AspNetCore.Routing.EndpointDataSource>().Endpoints)
+{
+    Console.WriteLine(endpoint.DisplayName);
+}
+
 app.Run();

@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -110,6 +111,7 @@ namespace MlDAL.Repositories
 
          }
  
+        
         public async Task<Package?> GetByIdWithAnalysesAsync(int packageID)
         {
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(packageID);
@@ -121,14 +123,32 @@ namespace MlDAL.Repositories
                 .FirstOrDefaultAsync(p => p.PackageID == packageID);
         }
 
-        public async Task<ICollection<Containing>?> GetPackageAnalyses (int id)
+        public async Task<ICollection<Analysis>?> GetPackageAnalyses (int id)
         {
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(id);
 
-            var package = await GetByIdWithAnalysesAsync(id);
+            return await _context.Packages
+                .Where(p => p.PackageID == id)
+                .SelectMany(p => p.containingAnalyses
+                    .Select(c => c.analysis))
+                .AsNoTracking()
+                .ToListAsync();
 
-            return package.containingAnalyses;
         }
+
+        
+        public async Task<ICollection<Package>> GetMatchingPackages (ICollection<int> requiredAnalysesIds, int requiredPackagesNum)
+        {
+            return await _context.Packages
+                .Where(p =>
+                    p.containingAnalyses
+                    .Any(c => requiredAnalysesIds.Contains(c.AnalysisID)))
+                .OrderByDescending(p => p.containingAnalyses.Count())
+                .Take(requiredPackagesNum)
+                .ToListAsync();
+
+        }
+
 
     }
 }

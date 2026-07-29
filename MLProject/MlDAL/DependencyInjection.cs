@@ -14,12 +14,17 @@ namespace MlDAL
                         (this IServiceCollection services, IConfiguration configuration )
         {
             services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(
-                configuration.GetConnectionString("TestConnection")));
+                options.UseSqlServer(
+                    configuration.GetConnectionString("TestConnection")));
 
             services.AddScoped<IAnalysisRepository, AnalysisRepo>();
             services.AddScoped<IPackagesRepo, PackageRepo>();
             services.AddScoped<IContainingRepo, ContainingRepo>();
+
+            services.AddScoped<ICityRepo, CityRepo>();
+            services.AddScoped<IRegionRepo, RegionRepo>();
+            services.AddScoped<ILabRepo, LabRepo>();
+
             return services;
         }
     }

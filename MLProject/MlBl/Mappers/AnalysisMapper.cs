@@ -10,7 +10,7 @@ namespace MlBL.Mappers
         public static Analysis ToEntity(this AnalysisDto dto)
         {
             return new Analysis
-                (dto.AnalysisID ?? 0, dto.AnalysisName, dto.AnalysisCost);
+                ( dto.Id ?? 0, dto.AnalysisName, dto.AnalysisCost);
         }
 
         public static Analysis ToEntity(this CreateAnalysisDto createDto)
@@ -21,7 +21,7 @@ namespace MlBL.Mappers
         public static Analysis ToEntity(this UpdateAnalysisDto updateDto)
         {
             return new Analysis
-                (updateDto.AnalysisID, updateDto.AnalysisCost);
+                (updateDto.Id, updateDto.AnalysisCost);
         }
 
         public static AnalysisDto ToDto(this Analysis analysis)
@@ -36,10 +36,10 @@ namespace MlBL.Mappers
             return new AnalysisDto
                 (createDto.AnalysisName, createDto.AnalysisCost);
         }
-        public static AnalysisDto ToDto(this UpdateAnalysisDto createDto)
+        public static AnalysisDto ToDto(this UpdateAnalysisDto updateDto)
         {
             return new AnalysisDto
-                (createDto.AnalysisID, "", createDto.AnalysisCost);
+                (updateDto.Id, "", updateDto.AnalysisCost);
         }
     }
 }

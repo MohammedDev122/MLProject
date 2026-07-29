@@ -7,6 +7,18 @@ namespace MlDAL.Interfaces
           IUpdate<Analysis>,
           IGetAll<Analysis>
     {
+
+        /// <summary>
+        /// Retrieves all analyses whose IDs match the specified collection of analysis IDs.
+        /// </summary>
+        /// <param name="analysisIds">
+        /// The collection of analysis IDs to retrieve.
+        /// </param>
+        /// <returns>
+        /// A list of matching analyses if any are found; otherwise, <c>null</c>.
+        /// </returns>
+        public Task<ICollection<Analysis>?> GetByIdAsync(ICollection<int> analysisIds);
+
         /// <summary>
         /// Retrieves an analysis by its ID, including all packages that contain it.
         /// </summary>
@@ -16,15 +28,7 @@ namespace MlDAL.Interfaces
         /// </returns>
         public Task<Analysis?> GetByIdWithPackagesAsync(int id);
 
-        /// <summary>
-        /// Retrieves multiple analyses by their IDs, including all packages that contain each analysis.
-        /// </summary>
-        /// <param name="analysisIds">The collection of analysis IDs to retrieve.</param>
-        /// <returns>
-        /// A collection of analyses with their related packages. Returns an empty collection if no matching analyses are found.
-        /// </returns>
-        public Task<ICollection<Analysis>> GetByIdWithPackagesAsync(ICollection<int> analysisIds);
-
+      
         /// <summary>
         /// Retrieves all packages that contain the specified analysis.
         /// </summary>
@@ -32,7 +36,7 @@ namespace MlDAL.Interfaces
         /// <returns>
         /// A list of packages containing the specified analysis.
         /// </returns>
-        public Task<ICollection<Containing>?> GetContainingPackagesAsync(int analysisId);
+        public Task<ICollection<Package>?> GetContainingPackagesAsync(int analysisId);
 
         /*
         /// <summary>

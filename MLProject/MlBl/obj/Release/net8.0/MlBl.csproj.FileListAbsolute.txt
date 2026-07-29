@@ -73,6 +73,15 @@ D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.AssemblyInfoInput
 D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.AssemblyInfo.cs
 D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.csproj.CoreCompileInputs.cache
 D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.sourcelink.json
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\MlBL.deps.json
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\MlBL.dll
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\MlBL.pdb
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\Core.dll
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\MlDAL.dll
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\Core.pdb
+D:\ML project\MLProject\MLProject\MlBl\bin\Release\net8.0\MlDAL.pdb
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.csproj.Up2Date
 D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.dll
 D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\refint\MlBL.dll
 D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\MlBL.pdb
+D:\ML project\MLProject\MLProject\MlBl\obj\Release\net8.0\ref\MlBL.dll

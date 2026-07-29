@@ -162,3 +162,6 @@ C:\Users\Win -11\NewMLProject\MLProject\MLProject\Tracker\obj\Release\net8.0\ref
 C:\Users\Win -11\NewMLProject\MLProject\MLProject\Tracker\obj\Release\net8.0\Tracker.pdb
 C:\Users\Win -11\NewMLProject\MLProject\MLProject\Tracker\obj\Release\net8.0\Tracker.genruntimeconfig.cache
 C:\Users\Win -11\NewMLProject\MLProject\MLProject\Tracker\obj\Release\net8.0\ref\Tracker.dll
+D:\ML project\MLProject\MLProject\Tracker\bin\Release\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\ML project\MLProject\MLProject\Tracker\bin\Release\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\ML project\MLProject\MLProject\Tracker\bin\Release\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll

@@ -27,7 +27,7 @@ namespace MlDAL.Repositories
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(packageId);
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisId);
 
-            var contains = await _context.Containings
+            var contains = await _context.Contains
                 .FirstOrDefaultAsync(c => c.PackageID == packageId && c.AnalysisID == analysisId);
 
             return contains.ContainID;
@@ -40,7 +40,7 @@ namespace MlDAL.Repositories
 
             var contain = await GetByIdAsync(containId);
 
-            _context.Containings.Remove(contain);
+            _context.Contains.Remove(contain);
 
             return await _context.SaveChangesAsync() > 0;
 
@@ -59,7 +59,7 @@ namespace MlDAL.Repositories
         {
             ArgumentNullException.ThrowIfNull(entity);
 
-            _context.Containings.Add(entity);
+            _context.Contains.Add(entity);
 
             await _context.SaveChangesAsync();
 
@@ -71,7 +71,7 @@ namespace MlDAL.Repositories
         {
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(containId);
 
-            return await _context.Containings
+            return await _context.Contains
                 .Include(c => c.package)
                 .Include(c => c.analysis)
                 .FirstOrDefaultAsync(c => c.ContainID == containId);
@@ -80,7 +80,7 @@ namespace MlDAL.Repositories
 
         public async Task<Dictionary<int, List<string>>> GetAll()
         {
-            return await _context.Containings
+            return await _context.Contains
                 .Include(c => c.package)
                 .Include(c => c.analysis)
                 .Select(c => new

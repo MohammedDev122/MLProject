@@ -15,8 +15,7 @@ namespace MlBL.DTOs
     /// </summary>
     public class AnalysisDto
     {
-        // can be null if it in adding state and Id didn't created yet
-        public int? AnalysisID { get; set; }
+        public int? Id { get; set; }
 
         public string AnalysisName { get; set; }
 
@@ -25,14 +24,14 @@ namespace MlBL.DTOs
 
         public AnalysisDto(int AnalysisID, string AnalysisName, decimal AnalysisCost)
         {
-            this.AnalysisID = AnalysisID;
+            this.Id = AnalysisID;
             this.AnalysisName = AnalysisName;
             this.AnalysisCost = AnalysisCost;
         }
 
         public AnalysisDto(string AnalysisName, decimal AnalysisCost)
         {
-            this.AnalysisID = null;
+            this.Id = null;
             this.AnalysisName = AnalysisName;
             this.AnalysisCost = AnalysisCost;
         }
@@ -60,13 +59,13 @@ namespace MlBL.DTOs
    
     public class UpdateAnalysisDto
     {
-        public int AnalysisID { get; set; }
+        public int Id { get; set; }
         public decimal AnalysisCost { get; set; }
 
 
         public UpdateAnalysisDto(int AnalysisID, decimal AnalysisCost)
         {
-            this.AnalysisID = AnalysisID;
+            this.Id = AnalysisID;
             this.AnalysisCost = AnalysisCost;
         }
 

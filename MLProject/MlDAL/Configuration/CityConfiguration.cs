@@ -13,11 +13,12 @@ namespace MlDAL.Configuration
     {
         public  void Configure (EntityTypeBuilder<City> builder)
         {
-            builder.HasKey(c => c.Id);
+            builder.HasKey(c => c.CityId);
 
             builder.Property(c => c.Name)
                .IsRequired()
-               .HasMaxLength(25);
+               .HasMaxLength(25)
+               .HasColumnName("City");
 
         }
     }

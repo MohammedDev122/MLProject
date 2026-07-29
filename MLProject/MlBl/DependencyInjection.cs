@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using MlBL.ClassToBeModified;
 using MlBL.DTOs;
 using MlBL.Interfaces;
 using MlBL.Services;
+using MlBL.Validators;
 using MlBL.Validators.AnalysisValidator;
 using MlBL.Validators.ContainingValidator;
 using MlBL.Validators.PackagesValidators;
@@ -20,18 +20,29 @@ namespace MlBL
         {
             // Analysis
             services.AddScoped<IAnalysisService, AnalysisService>();
+            services.AddScoped<IPackagesService, PackagesService>();
+            services.AddScoped<IRecomendedPackages, RecommendedPackages>();
+
+            //  services.AddScoped<IContainingService, ContainingService>();
+            //  services.AddScoped<IAnalysisInPackages, AnalysisInPackages>();
+
+            services.AddScoped<ICityService, CityService>();
+            services.AddScoped<IRegionService,  RegionService>();
+            services.AddScoped<ILabService, LabService>();
+
 
             services.AddValidatorsFromAssemblyContaining<CreateAnalysisValidator>();
             services.AddValidatorsFromAssemblyContaining<UpdateAnalysisValidator>();
-            services.AddScoped<IPackagesService, PackagesService>();
 
             services.AddValidatorsFromAssemblyContaining<CreatePackageValidator>();
             services.AddValidatorsFromAssemblyContaining<UpdatePackageValidator>();
-            services.AddScoped<IContainingService, ContainingService>();
 
             services.AddValidatorsFromAssemblyContaining<CreateContainingValidator>();
-            services.AddScoped<IAnalysisInPackages, AnalysisInPackages>();
-            services.AddScoped<IRecomendedPackages, RecommendedPackages>();
+
+            services.AddValidatorsFromAssemblyContaining<CityValidator>();
+            services.AddValidatorsFromAssemblyContaining<RegionValidator>();
+            services.AddValidatorsFromAssemblyContaining<LabValidator>();
+
 
             return services;
         }
