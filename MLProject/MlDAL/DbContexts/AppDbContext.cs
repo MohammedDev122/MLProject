@@ -21,7 +21,7 @@ namespace MlDAL.DbContexts
 
 
         public virtual DbSet<Analysis> Analysis { get; set; }
-        public virtual DbSet<Containing> Contains { get; set; }
+        public virtual DbSet<Containings> Containings { get; set; }
         public virtual DbSet<Package> Packages { get; set; }
 
 

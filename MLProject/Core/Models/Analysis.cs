@@ -19,8 +19,8 @@ namespace Core.Models
         public string AnalysisName { get; set; }
         public decimal Cost { get; set; }
 
-        public ICollection<Containing> containedPackages { get; set; }
-                    = new List<Containing>();
+        public ICollection<Containings> containedPackages { get; set; }
+                    = new List<Containings>();
 
         public Analysis () { }
 

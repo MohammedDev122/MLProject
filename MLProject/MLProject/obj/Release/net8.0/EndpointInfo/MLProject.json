@@ -2936,6 +2936,31 @@
   },
   "components": {
     "schemas": {
+      "Analysis": {
+        "type": "object",
+        "properties": {
+          "analysisId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "analysisName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "containedPackages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Containings"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "AnalysisDto": {
         "type": "object",
         "properties": {
@@ -2966,6 +2991,30 @@
           "name": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Containings": {
+        "type": "object",
+        "properties": {
+          "containID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "packageID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "package": {
+            "$ref": "#/components/schemas/Package"
+          },
+          "analysisID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "analysis": {
+            "$ref": "#/components/schemas/Analysis"
           }
         },
         "additionalProperties": false
@@ -3070,6 +3119,47 @@
         },
         "additionalProperties": false
       },
+      "Package": {
+        "type": "object",
+        "properties": {
+          "packageID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "packageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "packagePhotoPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "packageCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "packageType": {
+            "$ref": "#/components/schemas/enPackageType"
+          },
+          "packageGender": {
+            "$ref": "#/components/schemas/enPackageGender"
+          },
+          "packageStatus": {
+            "$ref": "#/components/schemas/enPackageStatus"
+          },
+          "visitType": {
+            "$ref": "#/components/schemas/enVisitType"
+          },
+          "containingAnalyses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Containings"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PackageDTO": {
         "type": "object",
         "properties": {
@@ -3123,6 +3213,31 @@
           "packageCost": {
             "type": "number",
             "format": "double"
+          },
+          "containedAnalysisIds": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "missedAnalysesIds": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "missedAnalyses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Analysis"
+            },
+            "nullable": true
           },
           "matchingScore": {
             "type": "integer",

@@ -27,7 +27,7 @@ namespace MlDAL.Repositories
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(packageId);
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(analysisId);
 
-            var contains = await _context.Contains
+            var contains = await _context.Containings
                 .FirstOrDefaultAsync(c => c.PackageID == packageId && c.AnalysisID == analysisId);
 
             return contains.ContainID;
@@ -40,7 +40,7 @@ namespace MlDAL.Repositories
 
             var contain = await GetByIdAsync(containId);
 
-            _context.Contains.Remove(contain);
+            _context.Containings.Remove(contain);
 
             return await _context.SaveChangesAsync() > 0;
 
@@ -55,11 +55,11 @@ namespace MlDAL.Repositories
                 await DeleteAsync(await GetIdAsync(packageId, analysisId));
         }
 
-        public async Task<int> AddAsync(Containing entity)
+        public async Task<int> AddAsync(Containings entity)
         {
             ArgumentNullException.ThrowIfNull(entity);
 
-            _context.Contains.Add(entity);
+            _context.Containings.Add(entity);
 
             await _context.SaveChangesAsync();
 
@@ -67,11 +67,11 @@ namespace MlDAL.Repositories
 
         }
 
-        public async Task<Containing?> GetByIdAsync(int containId)
+        public async Task<Containings?> GetByIdAsync(int containId)
         {
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(containId);
 
-            return await _context.Contains
+            return await _context.Containings
                 .Include(c => c.package)
                 .Include(c => c.analysis)
                 .FirstOrDefaultAsync(c => c.ContainID == containId);
@@ -80,7 +80,7 @@ namespace MlDAL.Repositories
 
         public async Task<Dictionary<int, List<string>>> GetAll()
         {
-            return await _context.Contains
+            return await _context.Containings
                 .Include(c => c.package)
                 .Include(c => c.analysis)
                 .Select(c => new
@@ -102,7 +102,7 @@ namespace MlDAL.Repositories
         public async Task<int> AddAsync(int packageId, int analysisId)
         {
             var contain =
-                new Containing(0, packageId, analysisId); // set id as zero till added
+                new Containings(0, packageId, analysisId); // set id as zero till added
 
             contain.ContainID = await AddAsync(contain);
 

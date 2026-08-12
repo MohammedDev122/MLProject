@@ -14,26 +14,25 @@ namespace Core.Models
         public string PackagePhotoPath { get; set; }
         public double PackageCost { get; set; }
 
-        public HashSet<int> containedAnalysisIds 
-            = new HashSet<int>();
+        public HashSet<int> containedAnalysisIds { get; set; }
+            = new();
 
-        public HashSet<int>? missedAnalysesIds
-            = new HashSet<int>();
+        public HashSet<int> missedAnalysesIds { get; set; }
+            = new();
 
-
-        public ICollection<Analysis>? missedAnalyses
+        public ICollection<Analysis> missedAnalyses { get; set; }
             = new List<Analysis>();
 
         public int matchingScore { get; set; }
 
+        public  PackageScore()
+        { }
         public  PackageScore(Package package)
         {
             packageId = package.PackageID;
             packageName = package.PackageName;
             PackagePhotoPath = package.PackagePhotoPath;
             PackageCost = package.PackageCost;
-
-            matchingScore = 0;
         }
     }
 }

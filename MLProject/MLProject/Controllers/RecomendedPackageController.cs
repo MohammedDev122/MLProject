@@ -30,10 +30,6 @@ namespace MLProject.Controllers
 
                    var RecommendedPackages = await _PackageRecomended.GetBestMatchingPackages(AnalysisList, TakeOnlyNums, LowestCost);
 
-                   /*foreach(var r in RecommendedPackages)
-                   {
-                      if( r.Key == 1) { }
-                   }*/
 
                    return (RecommendedPackages.Count != 0) ? 
                         Ok(RecommendedPackages.ToList()) :  

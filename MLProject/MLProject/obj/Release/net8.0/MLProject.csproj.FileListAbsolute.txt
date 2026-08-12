@@ -428,3 +428,4 @@ D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\refint\MLProject.
 D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.pdb
 D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.genruntimeconfig.cache
 D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\ref\MLProject.dll
+D:\ML project\MLProject\MLProject\MLProject\obj\Release\net8.0\MLProject.MvcApplicationPartsAssemblyInfo.cs

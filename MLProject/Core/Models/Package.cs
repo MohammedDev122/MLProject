@@ -22,8 +22,8 @@ namespace Core.Models
         public enPackageStatus packageStatus { get; set; }
         public enVisitType VisitType { get; set; }
 
-        public ICollection<Containing> containingAnalyses { get; set; }
-                        = new List<Containing>();
+        public ICollection<Containings> containingAnalyses { get; set; }
+                        = new List<Containings>();
 
         public Package()
         {

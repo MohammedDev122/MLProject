@@ -16,20 +16,6 @@ namespace MlBL.Services
             _packagesRepo = packagesRepo;
         }
 
-        public async Task<ICollection<PackageScore>> GetMatchingPackagesScore (HashSet<int> analysesIds, int requiredPackagsNum)
-        {
-            var matchingPackages = await _packagesRepo.GetMatchingPackages(analysesIds, requiredPackagsNum);
-
-            return matchingPackages
-                .Select(p => new PackageScore(p)
-                {
-                    containedAnalysisIds = p.containingAnalyses
-                        .Select(c => c.AnalysisID)
-                        .ToHashSet()
-                })
-                .ToList();
-
-        }
 
         public async Task<ICollection<PackageScore>> GetBestMatchingPackages(HashSet<int> analysesIds, int requiredPackagsNum, bool LowestCostFirst)
         {
@@ -37,19 +23,16 @@ namespace MlBL.Services
 
             // Load candidate packages that contain at least one requested analysis.
             ICollection<PackageScore> packages
-                = await GetMatchingPackagesScore(analysesIds, requiredPackagsNum);
+                = await _packagesRepo.GetMatchingPackages(analysesIds, requiredPackagsNum, LowestCostFirst);
 
             foreach (var package in packages) 
             {
                 // Create a copy of the requested analyses.
-                package.missedAnalysesIds = new HashSet<int>(analysesIds);
+                package.missedAnalysesIds = new HashSet<int>();
 
                 // Remove analyses already included in the package,
                 // leaving only the missing analyses.
-                package.missedAnalysesIds.ExceptWith(package.containedAnalysisIds);
-
-                // Calculate the package matching score.
-                package.matchingScore = analysesIds.Count() - package.missedAnalysesIds.Count();
+                package.missedAnalysesIds = analysesIds.Except(package.containedAnalysisIds).ToHashSet();
 
                 // Load detailed information for the missing analyses.
                 // TODO:
@@ -60,25 +43,9 @@ namespace MlBL.Services
                 package.missedAnalyses
                     = await _analysisRepo.GetByIdAsync(package.missedAnalysesIds);
             }
-            // Rank packages by matching score and cost preference.
-            List<PackageScore> result = new List<PackageScore>();
-
-            if (LowestCostFirst)
-            {
-                 result = packages
-                    .OrderByDescending(p => p.matchingScore)
-                        .ThenBy(p => p.PackageCost)
-                    .ToList();
-
-                return result;
-            }
-
-            result = packages.OrderByDescending(p => p.matchingScore)
-                        .ThenByDescending(p => p.PackageCost)
-                    .ToList();
 
 
-            return result;
+            return packages;
 
         }
 

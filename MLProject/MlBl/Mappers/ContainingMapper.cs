@@ -14,7 +14,7 @@ namespace MlBL.Mappers
     {
     
 
-        public static ContainingDTO ToContainigDTO(this Containing containing)
+        public static ContainingDTO ToContainigDTO(this Containings containing)
         {
 
             return new ContainingDTO(containing.ContainID, containing.PackageID, containing.AnalysisID);
@@ -22,7 +22,7 @@ namespace MlBL.Mappers
 
 
         }
-        public static async Task<StringContainingDTO> TOStringContainingDTO(this Containing containing,IPackagesService IPService,IAnalysisService IAService)
+        public static async Task<StringContainingDTO> TOStringContainingDTO(this Containings containing,IPackagesService IPService,IAnalysisService IAService)
         {
             var PResult =await IPService.FindByID(containing.PackageID);
             var AResult=await IAService.GetByIdAsync(containing.AnalysisID);
@@ -32,7 +32,7 @@ namespace MlBL.Mappers
 
         }
 
-        public static CreateContainingDTO ToCreateContainigDTO(this Containing containing)
+        public static CreateContainingDTO ToCreateContainigDTO(this Containings containing)
         {
 
             return new CreateContainingDTO(containing.PackageID, containing.AnalysisID);
@@ -41,30 +41,30 @@ namespace MlBL.Mappers
 
         }
 
-        public static async Task<Containing> ToEntity(this StringContainingDTO containing,IContainingService ICService)
+        public static async Task<Containings> ToEntity(this StringContainingDTO containing,IContainingService ICService)
         {
             
             var Result = await ICService.FindByID(containing.ContainID);
-            return (Result==null)?null : new Containing(Convert.ToInt32(Result.ContainID), Result.PackageID, Result.AnalysisID);
+            return (Result==null)?null : new Containings(Convert.ToInt32(Result.ContainID), Result.PackageID, Result.AnalysisID);
 
 
 
         }
 
-        public static async Task<Containing> ToEntity(this CreateContainingDTO containing)
+        public static async Task<Containings> ToEntity(this CreateContainingDTO containing)
         {
 
-            return  new Containing(0,containing.PackageID, containing.AnalysisID);
+            return  new Containings(0,containing.PackageID, containing.AnalysisID);
 
 
 
         }
 
 
-        public static async Task<Containing> ToEntity(this ContainingDTO containing)
+        public static async Task<Containings> ToEntity(this ContainingDTO containing)
         {
 
-            return new Containing(containing.ContainID??0, containing.PackageID, containing.AnalysisID);
+            return new Containings(containing.ContainID??0, containing.PackageID, containing.AnalysisID);
 
 
 

@@ -137,13 +137,43 @@ namespace MlDAL.Repositories
         }
 
         
-        public async Task<ICollection<Package>> GetMatchingPackages (ICollection<int> requiredAnalysesIds, int requiredPackagesNum)
+        public async Task<ICollection<PackageScore>> GetMatchingPackages (ICollection<int> requiredAnalysesIds, int requiredPackagesNum, bool LowestCost)
         {
-            return await _context.Packages
+            var query = _context.Packages
+                .Include(p => p.containingAnalyses)
                 .Where(p =>
                     p.containingAnalyses
                     .Any(c => requiredAnalysesIds.Contains(c.AnalysisID)))
-                .OrderByDescending(p => p.containingAnalyses.Count())
+                .Select(p => new PackageScore
+                {
+                    packageId = p.PackageID,
+                    packageName = p.PackageName,
+                    PackagePhotoPath = p.PackagePhotoPath,
+                    PackageCost = p.PackageCost,
+
+                    containedAnalysisIds = p.containingAnalyses
+                        .Select(c => c.AnalysisID)
+                        .ToHashSet(),
+
+                    matchingScore = p.containingAnalyses
+                        .Count(c => requiredAnalysesIds.Contains(c.AnalysisID))
+                })
+                .OrderByDescending(x => x.matchingScore);
+
+            if (LowestCost)
+            {
+                query = query
+                     .ThenBy(p => p.PackageCost);
+            }
+            
+           else 
+           {
+                query = query
+                    .ThenByDescending(p => p.PackageCost);
+
+           }
+                
+            return await query
                 .Take(requiredPackagesNum)
                 .ToListAsync();
 

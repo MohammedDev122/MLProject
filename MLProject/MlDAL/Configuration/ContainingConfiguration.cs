@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace MlDAL.Configuration
 {
-    public class ContainingConfiguration : IEntityTypeConfiguration<Containing>
+    public class ContainingConfiguration : IEntityTypeConfiguration<Containings>
     {
-        public void Configure(EntityTypeBuilder<Containing> builder)
+        public void Configure(EntityTypeBuilder<Containings> builder)
         {
 
             builder.HasKey(c => c.ContainID);

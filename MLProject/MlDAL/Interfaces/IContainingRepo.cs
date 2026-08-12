@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MlDAL.Interfaces
 {
-    public interface IContainingRepo : IBaseRepository<Containing>
+    public interface IContainingRepo : IBaseRepository<Containings>
     {
 
         /// <summary>

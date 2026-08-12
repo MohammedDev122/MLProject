@@ -47,7 +47,7 @@ namespace MlDAL.Interfaces
         /// A collection of <see cref="PackageScore"/> objects containing package information
         /// and the IDs of the analyses included in each package.
         /// </returns>
-        public Task<ICollection<Package>> GetMatchingPackages(ICollection<int> requiredAnalysesIds, int requiredPackagesNum);
+        public Task<ICollection<PackageScore>> GetMatchingPackages(ICollection<int> requiredAnalysesIds, int requiredPackagesNum, bool LowestCost);
 
 
         public Task<Dictionary<int, double>> GetAllPackagesCostAsync();

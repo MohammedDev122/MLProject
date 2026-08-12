@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Models
 {
-    public class Containing
+    public class Containings
     {
 
         public int ContainID { get;  set; }
@@ -18,13 +18,13 @@ namespace Core.Models
         public Analysis analysis { get; set; }
 
 
-        public Containing()
+        public Containings()
         {
           
 
         }
 
-        public Containing(int ContainID, int PackageID, int AnalysisID)
+        public Containings(int ContainID, int PackageID, int AnalysisID)
         {
             this.ContainID = ContainID;
             this.PackageID = PackageID;
