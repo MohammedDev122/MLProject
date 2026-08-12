@@ -140,7 +140,6 @@ namespace MlDAL.Repositories
         public async Task<ICollection<PackageScore>> GetMatchingPackages (ICollection<int> requiredAnalysesIds, int requiredPackagesNum, bool LowestCost)
         {
             var query = _context.Packages
-                .Include(p => p.containingAnalyses)
                 .Where(p =>
                     p.containingAnalyses
                     .Any(c => requiredAnalysesIds.Contains(c.AnalysisID)))
@@ -152,6 +151,7 @@ namespace MlDAL.Repositories
                     PackageCost = p.PackageCost,
 
                     containedAnalysisIds = p.containingAnalyses
+                        .Where(c => requiredAnalysesIds.Contains(c.AnalysisID))
                         .Select(c => c.AnalysisID)
                         .ToHashSet(),
 
@@ -162,17 +162,13 @@ namespace MlDAL.Repositories
 
             if (LowestCost)
             {
-                query = query
-                     .ThenBy(p => p.PackageCost);
+                query = query.ThenBy(x => x.PackageCost);
             }
-            
-           else 
-           {
-                query = query
-                    .ThenByDescending(p => p.PackageCost);
+            else
+            {
+                query = query.ThenByDescending(x => x.PackageCost);
+            }
 
-           }
-                
             return await query
                 .Take(requiredPackagesNum)
                 .ToListAsync();

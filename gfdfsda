@@ -1,0 +1,35 @@
+[33mcommit 5dd99b63f380b10e9e4263af7f334dc52d22bb17[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/efReplacment[m[33m)[m
+Author: Mohamed Abdelfatah <abdelfata7new@gmail.com>
+Date:   Wed Aug 12 19:40:59 2026 +0300
+
+    Improve GetBestRecommendedPackages algorithm
+
+[33mcommit 809ccdfd634a049312129dc64a76ec75cf9092d3[m[33m ([m[1;31morigin/feature/efReplacment[m[33m)[m
+Author: Mohamed Abdelfatah <abdelfata7new@gmail.com>
+Date:   Wed Jul 29 18:47:15 2026 +0300
+
+    Complete place entities business logic and endpoints, implement GetMatchingPackages feature
+
+[33mcommit 5f72d4e777ace84f49c453a159c4b40e9e56887e[m
+Author: Mohamed Abdelfatah <abdelfata7new@gmail.com>
+Date:   Wed Jul 22 19:47:48 2026 +0300
+
+    implement EF configurations and DAL for Package, Containing, City, Region, and Lab entities; add package recommendation algorithm
+
+[33mcommit ba568cc34853d166dc3f9344824e968d852e0f44[m
+Author: Mohammed <venomfighter122@gmail.com>
+Date:   Sun Jul 19 16:24:57 2026 +0300
+
+    Fixing Mistakes In Validations And Finishing Api Controllers And Adding Some Classes that awaits ef Replacment
+
+[33mcommit d4512311beb4ddc37bca851be618414d800866da[m
+Author: Mohammed <venomfighter122@gmail.com>
+Date:   Sun Jul 19 16:13:57 2026 +0300
+
+    Fixing Mistakes In Validations And Finishing Api Controllers And Adding Some Classes that awaits ef Replacment
+
+[33mcommit 5af5b435201af69a1567f6447e3daa1b91e94692[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Mohammed <venomfighter122@gmail.com>
+Date:   Sat Jul 4 12:01:09 2026 +0300
+
+    MlProjected Pushed Successfully

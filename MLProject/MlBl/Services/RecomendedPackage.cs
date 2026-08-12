@@ -34,14 +34,6 @@ namespace MlBL.Services
                 // leaving only the missing analyses.
                 package.missedAnalysesIds = analysesIds.Except(package.containedAnalysisIds).ToHashSet();
 
-                // Load detailed information for the missing analyses.
-                // TODO:
-                // This currently loads missing analyses with one query per package.
-                // Kept intentionally for readability since the maximum expected number
-                // of packages is small. Optimize only if profiling shows
-                // this becomes a performance bottleneck.
-                package.missedAnalyses
-                    = await _analysisRepo.GetByIdAsync(package.missedAnalysesIds);
             }
 
 

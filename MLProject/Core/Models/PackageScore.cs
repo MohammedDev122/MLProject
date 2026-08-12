@@ -20,8 +20,6 @@ namespace Core.Models
         public HashSet<int> missedAnalysesIds { get; set; }
             = new();
 
-        public ICollection<Analysis> missedAnalyses { get; set; }
-            = new List<Analysis>();
 
         public int matchingScore { get; set; }
 
